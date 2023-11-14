@@ -27,13 +27,13 @@ export default function RootLayout({
           >
             <div
               id="body-wrapper"
-              className="flex flex-row flex-wrap w-full h-screen bg-gradient-to-r  background-animate
+              className="flex flex-row flex-wrap w-full h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
                 from-pink-100
                 via-red-100
                 to-yellow-300
                 dark:from-slate-800
                 dark:via-slate-700
-                dark:to-slate-900
+                dark:to-slate-950
               ">
               <div
                 id="header"
