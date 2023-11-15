@@ -3,6 +3,10 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ModeToggle } from "@/components/ModeToggle";
+import { ArrowRight } from "lucide-react";
+import { LeftBar } from "@/components/LeftBar";
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,15 +38,35 @@ export default function RootLayout({
                 dark:from-slate-800
                 dark:via-slate-700
                 dark:to-slate-950
-              ">
+              "
+            >
               <div
                 id="header"
-                className="flex w-full justify-end  border-b-4 dark:border-slate-50 border-slate-800"
-              >
-                <ModeToggle />
+                className="flex w-full border-b-4 dark:border-slate-50 border-slate-800"
+              > 
+                <div className="w-2/12" ></div>
+                  <div className="w-8/12 flex flex-row">
+                      Menu      Menu     Menu
+                  </div>
+                  <div
+                    id="color-mode"
+                    className="w-2/12 flex flex-row justify-end"
+                  >
+                    <p className="mt-2 mr-2">Color modes </p>
+                    {/* TODO use framer to animate arrow */}
+                    <ArrowRight className="arrow-right-float mr-2 mt-2 " />
+                    <ModeToggle />
+                  </div>
               </div>
 
-              {children}
+              <div id="content" className="flex flex-row w-full">
+                <LeftBar />
+              
+
+                <div id="main" className="flex flex-col w-8/12 p-24">
+                  {children}
+                </div>
+              </div>
             </div>
           </ThemeProvider>
         </body>

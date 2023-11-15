@@ -20,7 +20,7 @@ export function Intro() {
   // Component return with the event listeners added to the main element
   return (
     <div
-      className="flex min-h-screen flex-col text-left  p-24"
+      className="flex min-h-screen flex-col text-left"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -28,10 +28,10 @@ export function Intro() {
         <span className="flex w-min">
           Hello! <animated.span style={wavingSpring}><Hand className="w-24 h-24 mt-3"/></animated.span>
         </span>
-        My name is <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-fuchsia-600 dark:from-amber-300 dark:to-amber-700">Sean Stobo.</span>
+        Im <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-fuchsia-600 dark:from-amber-300 dark:to-amber-700">Sean Stobo.</span>
       </h1>
       <h1 className="text-9xl">
-        I would like to be your <span className="font-bold">Web Developer.</span>
+        I Crafting Digital Art with a Sustainable Edge.
       </h1>
     </div>
   );
