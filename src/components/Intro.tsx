@@ -31,7 +31,7 @@ export function Intro() {
         Im <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-fuchsia-600 dark:from-amber-300 dark:to-amber-700">Sean Stobo.</span>
       </h1>
       <h1 className="text-9xl">
-        I Crafting Digital Art with a Sustainable Edge.
+        I Crafting Digital Experiences with a Sustainable Edge.
       </h1>
     </div>
   );
