@@ -48,28 +48,28 @@ const JobItem = ({
         alt={alt}
         className="w-full rounded mb-3 h-64 object-cover"
       />
-      <h4 className={`text-xl font-bold mb-1 text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-fuchsia-600 dark:from-amber-300 dark:to-amber-700`}>
+      <h4 className={`text-xl font-bold mb-1 text-transparent bg-clip-text bg-gradient-to-br from-slate-950 to-slate-800 dark:from-amber-300 dark:to-amber-700`}>
         {title}
       </h4>
-      <p className="text-sm text-slate-600 mb-3 h-9">{skills}</p>
+      <p className="dark:text-slate-400 font-light text-sm mb-5 h-9">{skills}</p>
 
-      <div className={`stats bg-slate-100 rounded-sm p-2 dark:bg-slate-900`}>
+      <div className="stats bg-slate-100 rounded-sm p-2 dark:bg-slate-900">
         <div className="flex">
           <p className="text-sm font-bold mb-1">
             {labelOne}
-            <span className="text-emerald-500 font-bold"> {statOne}</span>
+            <span className="text-emerald-500 font-bold ml-3"> {statOne}</span>
           </p>
         </div>
         <div className="flex">
           <p className="text-sm font-bold mb-1">
             {labelTwo}
-            <span className="text-emerald-500 font-bold">{statTwo}</span>
+            <span className="text-emerald-500 font-bold ml-3">{statTwo}</span>
           </p>
         </div>
         <div className="flex">
           <p className="text-sm font-bold mb-1">
             {labelThree}
-            <span className="text-emerald-500 font-bold">
+            <span className="text-emerald-500 font-bold ml-3">
               {" "}
               {statThree}
             </span>

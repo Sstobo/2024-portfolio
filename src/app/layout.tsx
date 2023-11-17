@@ -38,7 +38,6 @@ export default function RootLayout({
                 dark:to-slate-950
               "
               >
-
               <Header />
 
               <div id="content" className="flex flex-row w-full">
