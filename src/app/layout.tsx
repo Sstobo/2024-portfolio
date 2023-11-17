@@ -29,7 +29,7 @@ export default function RootLayout({
           >
             <div
               id="body-wrapper"
-              className="flex flex-row flex-wrap w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
+              className="flex text-left flex-row flex-wrap w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
                 from-pink-100
                 via-red-100
                 to-yellow-300

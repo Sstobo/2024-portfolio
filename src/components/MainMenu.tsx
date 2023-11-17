@@ -54,6 +54,7 @@ const sitesBuilt: { title: string; href: string; description: string }[] = [
  
 export function MainMenu() {
   return (
+    <div className="ml-7">
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -97,32 +98,10 @@ export function MainMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>My Work</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {sitesBuilt.map((component) => (
-                <ListItem
-                // image
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+       
       </NavigationMenuList>
     </NavigationMenu>
+    </div>
   )
 }
  
