@@ -116,6 +116,40 @@ export const LeftBar = () => {
   </div>
 
   <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+    <Link href="/custom-code">
+      <Tooltip>
+        <TooltipTrigger>
+          <AnimatedIconContent>
+            <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+              <Blocks className="w-6 h-6"/>
+            </div>
+          </AnimatedIconContent>
+        </TooltipTrigger>
+        <AnimatedTooltipContent>
+          <p>My Work</p>
+        </AnimatedTooltipContent>
+      </Tooltip>
+    </Link>
+  </div>
+
+  {/* <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+    <Link href="/ai-integrations">
+      <Tooltip>
+        <TooltipTrigger>
+          <AnimatedIconContent>
+            <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-lime-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+              <CircuitBoard className="w-6 h-6"/>
+            </div>
+          </AnimatedIconContent>
+        </TooltipTrigger>
+        <AnimatedTooltipContent>
+          <p>AI integrations</p>
+        </AnimatedTooltipContent>
+      </Tooltip>
+    </Link>
+  </div> */}
+
+  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
     <Link href="/contact">
       <Tooltip>
         <TooltipTrigger>
@@ -149,24 +183,8 @@ export const LeftBar = () => {
     </Link>
   </div>
 
-  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-    <Link href="/custom-code">
-      <Tooltip>
-        <TooltipTrigger>
-          <AnimatedIconContent>
-            <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
-              <Binary className="w-6 h-6"/>
-            </div>
-          </AnimatedIconContent>
-        </TooltipTrigger>
-        <AnimatedTooltipContent>
-          <p>Custom code</p>
-        </AnimatedTooltipContent>
-      </Tooltip>
-    </Link>
-  </div>
 
-  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+  {/* <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
     <Link href="/accessibility">
       <Tooltip>
         <TooltipTrigger>
@@ -181,26 +199,11 @@ export const LeftBar = () => {
         </AnimatedTooltipContent>
       </Tooltip>
     </Link>
-  </div>
+  </div> */}
 
-  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-    <Link href="/ai-integrations">
-      <Tooltip>
-        <TooltipTrigger>
-          <AnimatedIconContent>
-            <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-lime-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
-              <CircuitBoard className="w-6 h-6"/>
-            </div>
-          </AnimatedIconContent>
-        </TooltipTrigger>
-        <AnimatedTooltipContent>
-          <p>AI integrations</p>
-        </AnimatedTooltipContent>
-      </Tooltip>
-    </Link>
-  </div>
 
-  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+
+  {/* <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
     <Link href="/gutenberg-blocks">
       <Tooltip>
         <TooltipTrigger>
@@ -215,10 +218,10 @@ export const LeftBar = () => {
         </AnimatedTooltipContent>
       </Tooltip>
     </Link>
-  </div>
+  </div> */}
 
   {/* Interactive design icon with new structure */}
-  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+  {/* <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
     <Link href="/interactive-design">
       <Tooltip>
         <TooltipTrigger>
@@ -233,7 +236,7 @@ export const LeftBar = () => {
         </AnimatedTooltipContent>
       </Tooltip>
     </Link>
-  </div>
+  </div> */}
 </TooltipProvider>
 
     </div>

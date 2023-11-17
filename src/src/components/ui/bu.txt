@@ -1,0 +1,251 @@
+{/* 
+{/* miracon */}
+https://miracon.ca/
+ORGANIC SEARCH TRAFFIC
++
+281
+%
+YEAR-OVER-YEAR
+CONVERSION RATE
++
+59
+%
+YEAR-OVER-YEAR
+PAGEVIEWS
++
+255
+%
+YEAR-OVER-YEAR
+FASTER PAGE LOADS
++
+66
+%
+YEAR-OVER-YEAR
+
+{/* mrs lumber */}
+https://www.mrslumber.com/
+WEBSITE VISITS
++
+88
+%
+YEAR-OVER-YEAR
+PAGEVIEWS
++
+86
+%
+YEAR-OVER-YEAR
+FASTER PAGE SPEEDS
++
+60
+%
+YEAR-OVER-YEAR
+
+
+
+{/* chba */}
+https://cpd.chbabc.org/
+WEBSITE VISITS
++
+60
+%
+AFTER LAUNCH
+ORGANIC SEARCH TRAFFIC
++
+66
+%
+AFTER LAUNCH
+PAGEVIEWS
++
+79
+%
+AFTER LAUNCH
+
+
+{/* summ */}
+https://www.summfoods.com/
+AVG. SESSION DURATION
++
+105
+%
+YEAR-OVER-YEAR
+PAGES PER SESSION
++
+64
+%
+YEAR-OVER-YEAR
+REFERRAL TRAFFIC
++
+970
+%
+YEAR-OVER-YEAR
+
+
+
+{/* kitiman  bound */}
+ORGANIC SEARCH TRAFFIC
++
+101
+%
+SINCE LAUNCH
+PAGEVIEWS
++
+72
+%
+SINCE LAUNCH
+MOBILE TRAFFIC
++
+117
+%
+SINCE LAUNCH
+
+
+{/* delta q technologies */}
+FASTER PAGE SPEEDS
++
+86
+%
+YEAR-OVER-YEAR
+MORE TIME ON SITE
++
+73
+%
+YEAR-OVER-YEAR
+PAGES PER SESSION
++
+53
+%
+YEAR-OVER-YEAR
+
+
+{/* lindome */}
+https://lindomestructures.com/
+ORGANIC SEARCH TRAFFIC
++
+25
+%
+YEAR-OVER-YEAR
+PAGEVIEWS
++
+43
+%
+YEAR-OVER-YEAR
+AVG. PAGES PER SESSION
++
+31
+%
+YEAR-OVER-YEAR
+
+
+            {/* circular materials */}
+            https://www.circularmaterials.ca/about/
+            ORGANIC SEARCH TRAFFIC
++
+132
+%
+YEAR OVER YEAR
+TOTAL PAGEVIEWS
++
+318
+%
+YEAR OVER YEAR
+PAGES PER SESSION
++
+116
+%
+YEAR OVER YEAR
+
+
+{/* nexii */}
+
+ORGANIC SEARCH TRAFFIC
++
+90
+%
+YEAR-OVER-YEAR
+PAGEVIEWS
++
+113
+%
+YEAR-OVER-YEAR
+U.S. TRAFFIC
++
+314
+%
+YEAR-OVER-YEAR
+
+
+{/* pcrs */}
+https://pcrs.ca/
+YEAR-OVER-YEAR
+–
+57
+%
+BOUNCE RATE
+YEAR-OVER-YEAR
++
+43
+%
+LONGER SESSIONS
+FIRST MONTH POST-LAUNCH
++
+10
+%
+MORE SEARCH TRAFFIC
+
+{/*  */}
+{/* lgm financial services  */}
+https://www.lgm.ca/
+WEBSITE USERS
++
+70
+%
+YEAR-OVER-YEAR
+PAGES PER SESSION
++
+57
+%
+YEAR-OVER-YEAR
+FASTER PAGE LOADS
++
+20
+%
+YEAR-OVER-YEAR
+
+
+
+        {/* craft */}
+        https://www.craftbeermarket.ca/
+        ORGANIC SEARCH TRAFFIC
++
+73
+%
+YEAR-OVER-YEAR
+FASTER PAGE LOADS
++
+55
+%
+YEAR-OVER-YEAR
+ORGANIC IMPRESSIONS
++
+115
+%
+YEAR-OVER-YEAR
+
+{/* tourism prince rupert */}
+https://visitprincerupert.com/
+ORGANIC SEARCH TRAFFIC
++
+40
+%
+YEAR-OVER-YEAR
+PAGEVIEWS
++
+46
+%
+YEAR-OVER-YEAR
+MOBILE TRAFFIC
++
+52
+%
+YEAR-OVER-YEAR
+ */}

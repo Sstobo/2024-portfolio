@@ -44,7 +44,7 @@ export default function RootLayout({
               <div id="content" className="flex flex-row w-full">
                 <LeftBar />
 
-                <div id="main" className="flex flex-col w-10/12 pl-52 pt-52">
+                <div id="main" className="flex flex-col w-11/12 pl-52 pt-52">
                   <Suspense fallback={<div>Loading...</div>}> 
                     {children}
                   </Suspense>
