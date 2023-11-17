@@ -32,7 +32,7 @@ export default function RootLayout({
               className="flex text-left flex-row flex-wrap w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
                 from-pink-100
                 via-red-100
-                to-yellow-300
+                to-yellow-100
                 dark:from-slate-950
                 dark:via-cyan-950
                 dark:to-slate-950
