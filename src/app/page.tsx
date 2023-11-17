@@ -52,7 +52,7 @@ export default function Home() {
           <Wind className="absolute top-2 right-2 text-cyan-400 dark:text-slate-200" />
           <h4 className="text-xl dark:text-cyan-400">Tailwind</h4>
           <p className="dark:text-slate-400 font-light">
-            Tailwind's utility-first philosophy complements my precise approach
+            Tailwinds utility-first philosophy complements my precise approach
             to styling - a harmonious blend of form and function.
           </p>
         </div>
@@ -136,7 +136,7 @@ export default function Home() {
           <Cog className="absolute top-2 right-2 dark:text-slate-200" />
           <h4 className="text-xl dark:text-cyan-400">PHP</h4>
           <p className="dark:text-slate-400 font-light">
-            PHP's server-side scripting is where I blend logic and creativity to
+            PHPs server-side scripting is where I blend logic and creativity to
             push the web forward.
           </p>
         </div>
