@@ -30,12 +30,12 @@ export default function RootLayout({
             <div
               id="body-wrapper"
               className="flex text-left flex-row flex-wrap w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
-                from-pink-100
-                via-red-100
-                to-yellow-100
+                from-white
+                via-fuchsia-50
+                to-white
                 dark:from-slate-950
                 dark:via-cyan-950
-                dark:to-slate-950
+                dark:to-black
               "
               >
               <Header />
@@ -43,7 +43,7 @@ export default function RootLayout({
               <div id="content" className="flex flex-row w-full">
                 <LeftBar />
 
-                <div id="main" className="flex flex-col w-11/12 pl-52 pt-52">
+                <div id="main" className="flex flex-col w-11/12 pl-52 pt-40">
                   <Suspense fallback={<div>Loading...</div>}> 
                     {children}
                   </Suspense>

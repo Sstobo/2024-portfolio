@@ -7,7 +7,7 @@ export default function Page() {
       className="flex min-h-screen flex-col text-left"
     >
       <h1 className="text-9xl font-black">Lets talk!</h1>
-      <h1 className="text-6xl">
+      <h1 className="text-8xl">
           I am always looking for interesting and meaningful projects to work on. If you have an idea you would like to discuss, or just want to say hi, please feel free to reach out to me.
       </h1>
 

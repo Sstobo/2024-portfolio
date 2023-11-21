@@ -78,7 +78,7 @@ export const LeftBar = () => {
   return (
     <div
       id="left-bar"
-      className="flex flex-col w-20 transition-all duration-150 border-r-4 dark:border-slate-50 border-slate-800 fixed mt-16 h-full"
+      className="flex flex-col w-20 transition-all duration-150 border-r-2 dark:border-slate-50 border-slate-800 fixed mt-16 h-full"
     >
      <TooltipProvider delayDuration={100}>
   <div className="w-12 h-12 mx-auto mt-24 transition-all duration-150 hover:cursor-pointer">
@@ -109,14 +109,14 @@ export const LeftBar = () => {
           </AnimatedIconContent>
         </TooltipTrigger>
         <AnimatedTooltipContent>
-          <p>About me!</p>
+          <p>About Me</p>
         </AnimatedTooltipContent>
       </Tooltip>
     </Link>
   </div>
 
   <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-    <Link href="/custom-code">
+    <Link href="/what-i-do">
       <Tooltip>
         <TooltipTrigger>
           <AnimatedIconContent>
@@ -126,14 +126,14 @@ export const LeftBar = () => {
           </AnimatedIconContent>
         </TooltipTrigger>
         <AnimatedTooltipContent>
-          <p>My Work</p>
+          <p>What I Do</p>
         </AnimatedTooltipContent>
       </Tooltip>
     </Link>
   </div>
 
-  {/* <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-    <Link href="/ai-integrations">
+  <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+    <Link href="/my-tools">
       <Tooltip>
         <TooltipTrigger>
           <AnimatedIconContent>
@@ -143,11 +143,11 @@ export const LeftBar = () => {
           </AnimatedIconContent>
         </TooltipTrigger>
         <AnimatedTooltipContent>
-          <p>AI integrations</p>
+          <p>My Tools</p>
         </AnimatedTooltipContent>
       </Tooltip>
     </Link>
-  </div> */}
+  </div>
 
   <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
     <Link href="/contact">
