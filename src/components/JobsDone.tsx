@@ -38,9 +38,8 @@ const JobItem = ({
   const containerVariants = {
     hidden: {
       scale: 1,
-      opacity: 0.8,
       y: 0,
-      zIndex: 0,
+      zIndex: 1,
       transition: {
         scale: {
           duration: 0.2,
@@ -59,10 +58,9 @@ const JobItem = ({
       },
     },
     visible: {
-      scale: 1.2,
-      opacity: 1,
+      scale: 1,
       y: -20,
-      zIndex: 1,
+      zIndex: 10,
 
       transition: {
         scale: {
@@ -121,7 +119,7 @@ const JobItem = ({
     <motion.a
       href={link}
       target="_blank"
-      className={`w-2/12 z-25 relative  dark:bg-slate-900/50  hover:dark:bg-slate-950 hover:border-white hover:bg-white hover:shadow-lg bg-white rounded transition-all duration-300`}
+      className={`w-1/6 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
       onHoverStart={() => controls.start("visible")}
       onHoverEnd={() => controls.start("hidden")}
       variants={containerVariants}
