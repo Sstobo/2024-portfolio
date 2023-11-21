@@ -32,7 +32,7 @@ export function Intro() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h1 className="text-9xl font-black">
+      <h1 className="text-9xl font-black mb-6">
         <span className="flex w-min">
           Hello!{" "}
           <animated.span style={wavingSpring}>
@@ -44,7 +44,7 @@ export function Intro() {
           Sean Stobo.
         </span>
       </h1>
-      <h1 className="text-8xl">
+      <h1 className="text-5xl font-black">
         I Craft Digital Experiences with a Sustainable Edge.
       </h1>
 
@@ -145,7 +145,7 @@ export function Intro() {
             <TypeWriter
               options={{
                 strings: [
-                  `{ I create accessible and inclusive environments, to share your message. } `,
+                  `{ I create accessible and inclusive environments, to help you share your message with the world. } `,
                 ],
                 autoStart: true,
                 loop: true,
@@ -156,18 +156,7 @@ export function Intro() {
         </div>
       </div>
 
-      <div className="mt-14 flex">
-        <Image
-          src="/arrow.gif"
-          alt="An image of an arrow"
-          width={54}
-          height={54}
-          className="rotate-180 relative bottom-2 -left-14"
-        />
-        <h5 className="text-4xl font-bold mb-3">
-          Learn more by navigating over here.
-        </h5>
-      </div>
+   
     </div>
   );
 }

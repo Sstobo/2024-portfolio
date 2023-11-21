@@ -5,16 +5,18 @@ import { motion, useAnimation, Variants } from 'framer-motion';
 const sectionVariants: Variants = {
   visible: {
     opacity: 1,
-    scale: 1,
+    translateX:0,
     transition: {
       type: "spring",
       stiffness: 120,
       damping: 20,
-      duration: 0.8,
+      duration: 0.3,
     },
   },
   initial: {
-    opacity: 0, scale: 0.95
+    scale: 1,
+    opacity: 0,
+    translateX: -100,
   },
 };
 
@@ -26,7 +28,7 @@ type ScrollSectionProps = {
 export const ScrollSection: React.FC<ScrollSectionProps> = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.7 }} // Set the initial state
+      initial={{ opacity: 0,  translateX: -100 }} // Set the initial state
       animate="visible"
       variants={sectionVariants}
     >

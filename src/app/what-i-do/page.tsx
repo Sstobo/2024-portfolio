@@ -16,11 +16,13 @@ export default function Home() {
       <ScrollSection>
         <div className="w-12/12 mb-36" id="whatido">
           <h2 className="text-9xl font-black mb-3">What I Do</h2>
-          <p className="text-7xl mb-28">
-            A senior agency developer with 6 years of full-scale production
-            experience, I create pixel-perfect websites and custom components at pace and scale.
+          <p className="text-4xl mb-28  font-black">
+            I am a senior agency developer with 6 years of full-scale production
+            experience, and the leadership and training skills developed in 10 years working as an executive chef. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same.
           </p>
-       
+
+
+          <h2 className="ml-9 mb-12 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
           <FeaturedBuild
             subHeading="Latest Build"
             heading="Work On Climate"
@@ -28,6 +30,7 @@ export default function Home() {
             image="/woc.png"
             imageAlt="Work On Climate"
             fontStyle={`from-emerald-400 to-emerald-800 dark:to-emerald-100`}
+            link={`https://workonclimate.org/`}
           />
 
           <FeaturedBuild
@@ -37,7 +40,21 @@ export default function Home() {
             image="/lindome.png"
             imageAlt="Lindome Structures"
             fontStyle={`from-cyan-400 to-blue-800 dark:to-blue-100`}
+            link={`https://lindomestructures.com/`}
           />
+
+
+<h2 className="ml-9 mb-12 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">GPT Powered AI Applications</h2>
+          <FeaturedBuild
+            subHeading="LLM Storyteller App"
+            heading="Visit Storyland"
+            description="A beautiful and engaging web app that uses GPT-4 Turbo to generate stories based on user input. Leveraging the new JSON enforcement, Whisper voice simulation, and Dalle-3."
+            image="/story.png"
+            imageAlt="Work On Climate"
+            fontStyle={`from-red-400 to-red-800 dark:to-rose-500`}
+            link={`https://storyland-two.vercel.app/`}
+          />
+
           </div>
      </ScrollSection>
 

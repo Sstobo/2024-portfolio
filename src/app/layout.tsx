@@ -31,7 +31,7 @@ export default function RootLayout({
               id="body-wrapper"
               className="flex text-left flex-row flex-wrap w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
                 from-white
-                via-fuchsia-50
+                via-slate-100
                 to-white
                 dark:from-slate-950
                 dark:via-cyan-950

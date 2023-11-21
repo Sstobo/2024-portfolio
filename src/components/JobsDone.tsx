@@ -121,7 +121,7 @@ const JobItem = ({
     <motion.a
       href={link}
       target="_blank"
-      className={`w-3/12 z-25 relative dark:border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950 hover:border-white hover:bg-white hover:shadow-lg bg-white rounded transition-all duration-300`}
+      className={`w-2/12 z-25 relative  dark:bg-slate-900/50  hover:dark:bg-slate-950 hover:border-white hover:bg-white hover:shadow-lg bg-white rounded transition-all duration-300`}
       onHoverStart={() => controls.start("visible")}
       onHoverEnd={() => controls.start("hidden")}
       variants={containerVariants}
@@ -136,17 +136,17 @@ const JobItem = ({
         className="w-full mb-3 object-contain h-36"
       />
       <h4
-        className={`text-xl px-2 font-bold mb-1 text-transparent bg-clip-text bg-gradient-to-br from-slate-950 to-slate-800 dark:from-amber-300 dark:to-amber-700`}
+        className={`text-xl px-5 font-bold mb-1 dark:text-cyan-400`}
       >
         {title}
       </h4>
-      <p className="dark:text-slate-400  mb-3 px-2 font-light text-sm">{skills}</p>
+      <p className="dark:text-slate-400  mb-3 px-5 font-light text-sm">{skills}</p>
 
       <motion.div
         initial="hidden"
         animate={controls}
         variants={statsVariants}
-        className="stats  p-2 dark:bg-slate-900 bg-slate-100"
+        className="stats  p-3 dark:bg-slate-900 bg-slate-100 mx-3 rounded mb-3"
       >
         <div className="flex">
           <p className="text-xs mb-1">
@@ -387,6 +387,8 @@ export const JobsDone = () => {
       color: "yellow",
     },
   ];
+
+  // TODO muddlerrs!!
 
   return (
     <div className="w-full flex flex-row gap-3 flex-wrap" id="jobsdone">

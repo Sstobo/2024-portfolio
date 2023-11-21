@@ -9,7 +9,7 @@ export default function Page() {
 
       <ScrollSection>
       <h1 className="text-9xl font-black">What about me?</h1>
-        <h1 className="text-8xl">
+        <h1 className="text-4xl font-black">
           <span className="flex w-full">
             I am a Vancouver based, professional web developer with a passion for beautiful, sustianable, and accessible web experiences.
           </span>

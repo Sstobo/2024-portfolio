@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
-
+import { ExternalLink } from 'lucide-react'
 type FeaturedBuildProps = {
     subHeading: string;
     heading: string;
@@ -8,21 +8,24 @@ type FeaturedBuildProps = {
     image: string;
     imageAlt: string;
     fontStyle: string;
+    link: string;
 }
 
 export const FeaturedBuild = (props: FeaturedBuildProps) => {
-    const { subHeading, heading, description, image, imageAlt, fontStyle } = props;
+    const { subHeading, heading, description, image, imageAlt, fontStyle, link } = props;
 
     return (
-        <div className="flex flex-row flex-wrap pl-12 relative justify-center items-center mb-20">
-        <div className="w-6/12">
+        <div className="flex flex-row flex-wrap p-6 pl-12 relative justify-center items-center mb-20 dark:hover:bg-slate-900 hover:bg-accent rounded">
+        <div className="w-6/12 pr-16">
 
           <h6>{subHeading}</h6>
           <h3 className={`text-6xl font-black mb-3 text-transparent bg-clip-text bg-gradient-to-br ${fontStyle}`}>
            {heading}</h3>
-          <p className="text-xl mb-12">
+          <p className="text-xl mb-6 font-light">
           {description}
           </p>
+          <a href={link} target="_blank" className="w-fit pr-10  flex text-sm dark:bg-slate-700 hover:cursor-pointer transition-colors duration-75 rounded p-3 relative dark:hover:bg-slate-600">
+            View Site <ExternalLink className="absolute h-4 w-4 right-2 top-3"/></a>
           </div>
           <div className="w-6/12">
             <Image 
