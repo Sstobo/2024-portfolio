@@ -32,7 +32,7 @@ export function MainMenu() {
                       className="flex h-full w-full select-none flex-col justify-end  p-6 no-underline outline-none focus:shadow-md "
                       href="/"
                     >
-                      <div className="border border-dashed border-black dark:border-0 p2 rounded-t-3xl bg-slate-200">
+                      <div className="border border-dashed border-black dark:border-0 p2 rounded-t-3xl bg-slate-200 dark:bg-slate-700">
                       <Image
                         src="/tinyme.png"
                         alt="Picture of Sean Stobo"

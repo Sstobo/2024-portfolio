@@ -15,6 +15,8 @@ export default function Page() {
         />
       </ScrollSection>
 
+      <h3 className="text-7xl font-bold mt-32 mb-36">Here are some of the things that make me happy.</h3>
+    
       <div className="flex w-full gap-2">
         <div className="w-1/3 relative">
           <h3 className="text-5xl font-bold top-1/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
@@ -25,9 +27,9 @@ export default function Page() {
             alt="Picture of the author"
             width={500}
             height={500}
-            className="object-cover  h-2/4 mb-3"
+            className="object-cover  h-2/4 mb-3 rounded hover:scale-125 duration-150 transition-all ease-in-out"
           />
-          <div className="relative  mb-3 h-2/4">
+          <div className="relative mb-3 h-2/4">
             <h3 className="text-5xl font-bold top-3/4 absolute text-center text-white p-4 left-10 drop-shadow-md">
               Making pizza!
             </h3>
