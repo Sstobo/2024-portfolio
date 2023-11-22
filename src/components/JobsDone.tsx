@@ -58,7 +58,7 @@ const JobItem = ({
       },
     },
     visible: {
-      scale: 1,
+      scale: 1.2,
       y: -20,
       zIndex: 10,
 
@@ -119,7 +119,7 @@ const JobItem = ({
     <motion.a
       href={link}
       target="_blank"
-      className={`w-1/6 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
+      className={`w-64 border border-dashed border-black dark:hover:border-slate-900 hover:border-white opacity-50 hover:opacity-100 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
       onHoverStart={() => controls.start("visible")}
       onHoverEnd={() => controls.start("hidden")}
       variants={containerVariants}
@@ -144,7 +144,7 @@ const JobItem = ({
         initial="hidden"
         animate={controls}
         variants={statsVariants}
-        className="stats  p-3 dark:bg-slate-900 bg-slate-100 mx-3 rounded mb-3"
+        className="stats  p-3 dark:bg-slate-600 bg-stone-100 w-full rounded-b mb-3 absolute shadow-md"
       >
         <div className="flex">
           <p className="text-xs mb-1">

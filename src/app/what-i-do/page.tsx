@@ -6,7 +6,7 @@ import { TechStack } from '@/components/TechStack';
 import { JobsDone } from '@/components/JobsDone';
 import { FeaturedBuild } from '@/components/FeaturedBuild';
 import { ScrollSection } from '@/components/animations/ScrollSection';
-
+import { PageBanner } from '@/components/PageBanner';
 
 
 export default function Home() {
@@ -14,14 +14,14 @@ export default function Home() {
     <main className="flex h-full flex-row flex-wrap">
 
       <ScrollSection>
-        <div className="w-12/12 mb-36" id="whatido">
-          <h2 className="text-9xl font-black mb-3">What I Do</h2>
-          <p className="text-4xl mb-28  font-black">
-            I am a senior agency developer with 6 years of full-scale production
-            experience, and the leadership and training skills developed in 10 years working as an executive chef. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same.
-          </p>
 
-
+          <PageBanner
+            heading="What I Do"
+            description="I am a senior agency developer with 6 years of full-scale production experience, and the leadership and training skills developed in 10 years working as an executive chef. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same."
+            fontStyle={`from-pink-400 to-fuchsia-600 dark:from-fuchsia-500 dark:to-purple-700`}
+          />
+          
+        <div>
           <h2 className="ml-9 mb-12 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
           <FeaturedBuild
             subHeading="Latest Build"

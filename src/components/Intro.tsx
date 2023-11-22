@@ -44,7 +44,7 @@ export function Intro() {
           Sean Stobo.
         </span>
       </h1>
-      <h1 className="text-5xl font-black">
+      <h1 className="text-5xl font-medium">
         I Craft Digital Experiences with a Sustainable Edge.
       </h1>
 
