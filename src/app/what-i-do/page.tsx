@@ -18,11 +18,11 @@ export default function Home() {
           <PageBanner
             heading="What I Do"
             description="I am a senior agency developer with 6 years of full-scale production experience, and the leadership and training skills developed in 10 years working as an executive chef. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same."
-            fontStyle={`from-pink-400 to-fuchsia-600 dark:from-fuchsia-500 dark:to-purple-700`}
+            fontStyle={`from-blue-400 to-cyan-600 dark:from-fuchsia-500 dark:to-purple-700`}
           />
           
         <div>
-          <h2 className="ml-9 mb-12 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
+          <h2 className="ml-9 mb-12 mt-24 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
           <FeaturedBuild
             subHeading="Latest Build"
             heading="Work On Climate"

@@ -119,7 +119,7 @@ const JobItem = ({
     <motion.a
       href={link}
       target="_blank"
-      className={`w-64 border border-dashed border-black dark:hover:border-slate-900 hover:border-white opacity-50 hover:opacity-100 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
+      className={`w-64 p-3 border-2 border-dashed border-black dark:hover:border-slate-900 hover:border-teal-300 opacity-50 hover:opacity-100 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
       onHoverStart={() => controls.start("visible")}
       onHoverEnd={() => controls.start("hidden")}
       variants={containerVariants}
@@ -131,35 +131,35 @@ const JobItem = ({
         width={width}
         height={300}
         alt={alt}
-        className="w-full mb-3 object-contain h-36"
+        className="w-full mb-3 object-cover rounded h-36"
       />
       <h4
-        className={`text-xl px-5 font-bold mb-1 dark:text-cyan-400`}
+        className={`text-xl font-bold mb-1 dark:text-cyan-400`}
       >
         {title}
       </h4>
-      <p className="dark:text-slate-400  mb-3 px-5 font-light text-sm">{skills}</p>
+      <p className="dark:text-slate-400  mb-3 font-light text-sm">{skills}</p>
 
       <motion.div
         initial="hidden"
         animate={controls}
         variants={statsVariants}
-        className="stats  p-3 dark:bg-slate-600 bg-stone-100 w-full rounded-b mb-3 absolute shadow-md"
+        className="stats  p-3 dark:bg-slate-600 bg-teal-100 w-full rounded-b mb-3 absolute shadow-md -left-0"
       >
         <div className="flex">
-          <p className="text-xs mb-1">
+          <p className="text-xs mb-1 font-bold">
             {labelOne}
             <span className="text-emerald-500 font-bold ml-3"> {statOne}</span>
           </p>
         </div>
         <div className="flex">
-          <p className="text-xs  mb-1">
+          <p className="text-xs  mb-1  font-bold">
             {labelTwo}
-            <span className="text-emerald-500 font-bold ml-3">{statTwo}</span>
+            <span className="text-emerald-500 font-bold ml-3 ">{statTwo}</span>
           </p>
         </div>
         <div className="flex">
-          <p className="text-xs mb-1">
+          <p className="text-xs mb-1  font-bold">
             {labelThree}
             <span className="text-emerald-500 font-bold ml-3">
               {" "}

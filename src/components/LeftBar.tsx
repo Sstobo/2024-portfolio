@@ -98,7 +98,7 @@ export const LeftBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-red-500 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300  dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <Home className="w-6 h-6 " />
                   </div>
                 </AnimatedIconContent>
@@ -115,7 +115,7 @@ export const LeftBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-blue-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300  dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <PersonStanding className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>
@@ -132,7 +132,7 @@ export const LeftBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white  dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <Blocks className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>
@@ -149,7 +149,7 @@ export const LeftBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-lime-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <CircuitBoard className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>
@@ -166,7 +166,7 @@ export const LeftBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-emerald-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <Mailbox className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>
@@ -183,7 +183,7 @@ export const LeftBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white rounded-sm text-slate-700 hover:text-fuchsia-400 dark:text-slate-100 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <HardDriveDownload className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>

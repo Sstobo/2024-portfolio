@@ -15,7 +15,7 @@ export const PageBanner = (props: PageBannerProps) => {
 
     return (
 
-        <div className="w-12/12 h-screen">
+        <div className="w-12/12 h-screen mb-24">
             <h2 className={`text-9xl font-black mb-3 text-transparent bg-clip-text bg-gradient-to-br ${fontStyle} `}>{heading}</h2>
             <p className="text-5xl mb-48  font-medium">{description}</p>
             <motion.div
@@ -27,7 +27,7 @@ export const PageBanner = (props: PageBannerProps) => {
                     duration: 3, repeat: Infinity
                   }}
             >
-            <div className={`dark:hover:bg-slate-950 hover:bg-slate-200 hover:cursor-pointer rounded w-24 h-24 flex justify-center items-center duration-150 tranistion-all `} onClick={() => window.scrollTo({ top: 1100, behavior: 'smooth' })}>
+            <div className={`dark:hover:bg-slate-950 dark:bg-slate-800 hover:bg-teal-300 bg-teal-200 hover:cursor-pointer rounded w-24 h-24 flex justify-center items-center duration-150 tranistion-all `} onClick={() => window.scrollTo({ top: 1100, behavior: 'smooth' })}>
             <ChevronsDown className="text-black dark:text-white h-20 w-20"/>
             </div>
             </motion.div>

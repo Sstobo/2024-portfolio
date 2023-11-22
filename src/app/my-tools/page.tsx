@@ -12,7 +12,7 @@ import { PageBanner } from '@/components/PageBanner';
 
 export default function Home() {
   return (
-    <main className="flex h-full flex-row flex-wrap">
+    <main className="flex flex-row flex-wrap">
 
       <ScrollSection>
     
@@ -26,7 +26,7 @@ export default function Home() {
        
       </ScrollSection>
 
-      <h3 className="text-5xl font-bold mt-32 mb-3">Full-Stack Developer: Crafting Eco-Efficient, Future-Proof Digital Experiences</h3>
+      <h3 className="text-5xl font-bold  mb-3">Full-Stack Developer: Crafting Eco-Efficient, Future-Proof Digital Experiences</h3>
       <p className="text-xl dark:text-slate-400 mb-9 w-2/4">With a devotion to the art of code, I engineer seamless, scalable web applications harnessing the power of server-side rendering, utility-first styling, and robust type-safe languages, all underpinned by a philosophy of sustainability in the digital realm.</p>
       <TechStack />
 

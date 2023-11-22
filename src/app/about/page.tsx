@@ -18,7 +18,7 @@ const ImageItem = ({
   // Rest of the code...
   return (
     <div className={`relative mb-3 ${additionalClasses}`}>
-      <h3 className="text-3xl font-bold top-3/4 absolute mx-auto  text-white p-4 drop-shadow-md">
+      <h3 className="text-3xl font-bold bottom-1/4 absolute mx-auto  text-white p-4 drop-shadow-md">
         {title}
       </h3>
       <Image
@@ -39,11 +39,11 @@ export default function Page() {
         <PageBanner
           heading="Who am I?"
           description="I am a Vancouver based, professional web developer with a passion for beautiful, sustianable, and accessible web experiences. I have lived an interesting and varied life, which uniquely positions me in the IT marketplace."
-          fontStyle={`from-purple-900 via-red-800 to-yellow-600 dark:from-emerald-500 dark:via-cyan-400 dark:to-purple-100`}
+          fontStyle={`from-green-900 via-emerald-500 to-yellow-600 dark:from-emerald-500 dark:via-cyan-400 dark:to-purple-100`}
         />
       </ScrollSection>
 
-      <h3 className="text-7xl font-bold mt-32 mb-16">
+      <h3 className="text-7xl font-bold mb-16">
         Here are some of the things that make me happy.💗
       </h3>
 
