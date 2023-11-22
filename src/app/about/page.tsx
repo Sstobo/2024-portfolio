@@ -4,6 +4,34 @@ import { ScrollSection } from "@/components/animations/ScrollSection";
 import { PageBanner } from "@/components/PageBanner";
 import Image from "next/image";
 
+const ImageItem = ({
+  title,
+  src,
+  alt,
+  additionalClasses,
+}: {
+  title: string;
+  src: string;
+  alt: string;
+  additionalClasses: string;
+}) => {
+  // Rest of the code...
+  return (
+    <div className={`relative mb-3 ${additionalClasses}`}>
+      <h3 className="text-3xl font-bold top-3/4 absolute mx-auto  text-white p-4 drop-shadow-md">
+        {title}
+      </h3>
+      <Image
+        src={src}
+        alt={alt}
+        width={600}
+        height={600}
+        className="object-cover h-96"
+      />
+    </div>
+  );
+};
+
 export default function Page() {
   return (
     <main className="flex h-full flex-row flex-wrap">
@@ -15,108 +43,69 @@ export default function Page() {
         />
       </ScrollSection>
 
-      <h3 className="text-7xl font-bold mt-32 mb-36">Here are some of the things that make me happy.💗</h3>
-    
-      <div className="flex w-full gap-2">
-        <div className="w-1/3 relative">
-          <h3 className="text-5xl font-bold top-1/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
-            My little fluffball Sol.
-          </h3>
-          <Image
+      <h3 className="text-7xl font-bold mt-32 mb-16">
+        Here are some of the things that make me happy.💗
+      </h3>
+
+      <div className="flex flex-wrap w-full justify-between items-stretch mb-32">
+        <div className="flex-1 p-1.5">
+          <ImageItem
+            title="My little fluffball Sol."
             src="/sol.jpg"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-            className="object-cover  h-2/4 mb-3 rounded hover:scale-125 duration-150"
+            alt="Fluffball Sol"
+            additionalClasses="mb-3"
           />
-          <div className="relative mb-3 h-2/4">
-            <h3 className="text-5xl font-bold top-3/4 absolute text-center text-white p-4 left-10 drop-shadow-md">
-              Making pizza!
-            </h3>
-            <Image
-              src="/cooking.jpeg"
-              alt="Picture of the author"
-              width={500}
-              height={500}
-              className="object-cover  h-full"
-            />
-          </div>
-
-          <div className="relative  mb-3">
-            <h3 className="text-5xl font-bold top-3/4 absolute text-center text-white p-4 drop-shadow-md">
-              Exploring gardens.
-            </h3>
-            <Image
-              src="/sol2.jpeg"
-              alt="Picture of the author"
-              width={500}
-              height={500}
-              className="object-cover  h-full"
-            />
-          </div>
+          <ImageItem
+            title="Making pizza!"
+            src="/cooking.jpeg"
+            alt="Making pizza"
+            additionalClasses=""
+          />
         </div>
 
-        <div className="w-1/3 relative -top-20">
-          <h3 className="text-5xl font-bold top-3/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
-            Skiing in the mountains.
-          </h3>
-          <Image
+        <div className="flex-1 p-1.5">
+          <ImageItem
+            title="Spending time with loved ones!"
+            src="/mensue.jpg"
+            alt="Spending time with loved ones"
+            additionalClasses="mb-3" // Adjust the height for this last image
+          />
+          <ImageItem
+            title="Exploring gardens."
+            src="/sol2.jpeg"
+            alt="Exploring gardens"
+            additionalClasses=""
+          />
+        </div>
+
+        <div className="flex-1 p-1.5">
+          <ImageItem
+            title="Riding majestic Icelandic warhorses."
+            src="/horsy.png"
+            alt="Riding Icelandic warhorses"
+            additionalClasses=""
+          />
+          <ImageItem
+            title="Skiing in the mountains."
             src="/skiview2.png"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-            className="object-cover h-full mb-3"
+            alt="Skiing in the mountains"
+            additionalClasses=""
           />
-          <div className="relative  mb-3 h-2/4">
-            <h3 className="text-5xl font-bold top-3/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
-              Enjoying the moment.
-            </h3>
-            <Image
-              src="/skiview.png"
-              alt="Picture of the author"
-              width={500}
-              height={500}
-              className="object-cover h-full"
-            />
-          </div>
         </div>
 
-        <div className="w-1/3 relative">
-          <h3 className="text-5xl font-bold top-1/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
-            Travelling and training Brazillian Jiu Jitsu.
-          </h3>
-          <Image
+        <div className="flex-1 p-1.5">
+          <ImageItem
+            title="Travelling and training Brazilian Jiu Jitsu."
             src="/bjj.png"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-            className="object-cover h-2/4 mb-3"
+            alt="Training Brazilian Jiu Jitsu"
+            additionalClasses=""
           />
-          <div className="relative h-1/4  mb-3">
-            <h3 className="text-5xl font-bold top-1/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
-              Riding magestic Icelandic warhorses.
-            </h3>
-            <Image
-              src="/horsy.png"
-              alt="Picture of the author"
-              width={500}
-              height={500}
-              className="object-cover h-full"
-            />
-          </div>
-
-          <div className="relative h-2/4  mb-3">
-            <h3 className="text-5xl font-bold top-1/4 mb-3 absolute text-center text-white p-4 drop-shadow-md">
-              Spending time with loved ones!
-            </h3>
-            <Image
-              src="/mensue.jpg"
-              alt="Picture of the author"
-              width={500}
-              height={400}
-              className="object-cover object-left   h-full mb-3"
-            />
-          </div>
+          <ImageItem
+            title="Enjoying the moment."
+            src="/skiview.png"
+            alt="Enjoying the moment"
+            additionalClasses=""
+          />
         </div>
       </div>
     </main>
