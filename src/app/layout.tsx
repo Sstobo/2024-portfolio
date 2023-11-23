@@ -29,7 +29,7 @@ export default function RootLayout({
           >
             <div
               id="body-wrapper"
-              className="flex text-left flex-row flex-wrap w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
+              className="-z-40 flex text-left flex-row flex-wrap w-full h-fit min-h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] background-animate
                 from-white
                 via-slate-100
                 to-white

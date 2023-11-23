@@ -7,17 +7,25 @@ type PageBannerProps = {
     heading: string;
     description: string;
     fontStyle: string;
+    subheading?: string;
 }
 
 
 export const PageBanner = (props: PageBannerProps) => {
-    const { heading, description, fontStyle } = props;
+    const { heading, description, fontStyle, subheading } = props;
 
     return (
 
-        <div className="w-12/12 h-screen mb-24">
-            <h2 className={`text-9xl font-black mb-3 text-transparent bg-clip-text bg-gradient-to-br ${fontStyle} `}>{heading}</h2>
-            <p className="text-5xl mb-48  font-medium">{description}</p>
+        <div className="w-12/12 mb-24 flex flex-row flex-wrap justify-between">
+            <h2 className={`w-full mb-24 text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br ${fontStyle} `}>{heading}</h2>
+            <p className="text-5xl mb-32  font-medium w-7/12">{description}</p>
+            
+            <div className="relative w-4/12">
+                    <p className=" font-medium text-xl">{subheading}</p>
+                    <div className={`absolute -top-12 -left-12 h-32 w-32 opacity-25 bg-gradient-to-br ${fontStyle}`}></div>
+            </div>
+            
+            <div className="w-full mb-72">
             <motion.div
                 animate={{ y: [0, 20, 0] }}
                 transition={{
@@ -31,6 +39,7 @@ export const PageBanner = (props: PageBannerProps) => {
             <ChevronsDown className="text-black dark:text-white h-20 w-20"/>
             </div>
             </motion.div>
+            </div>
         </div>
     )
 }

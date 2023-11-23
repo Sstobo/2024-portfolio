@@ -10,7 +10,8 @@ import {
   Accessibility,
   CircuitBoard,
   Blocks,
-  Layout,
+  DatabaseZap,
+  Boxes,
   Home,
 } from "lucide-react";
 import {
@@ -111,6 +112,44 @@ export const LeftBar = () => {
         </div>
 
         <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+          <Link href="/what-i-do">
+            <Tooltip>
+              <TooltipTrigger>
+                <AnimatedIconContent>
+                  <div className="w-12 h-12 bg-white  dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                    <Boxes className="w-6 h-6" />
+                  </div>
+                </AnimatedIconContent>
+              </TooltipTrigger>
+              <AnimatedTooltipContent>
+                <p>My Work</p>
+              </AnimatedTooltipContent>
+            </Tooltip>
+          </Link>
+        </div>
+
+
+
+
+        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+          <Link href="/my-tools">
+            <Tooltip>
+              <TooltipTrigger>
+                <AnimatedIconContent>
+                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
+                    <DatabaseZap  className="w-6 h-6" />
+                  </div>
+                </AnimatedIconContent>
+              </TooltipTrigger>
+              <AnimatedTooltipContent>
+                <p>My Tools</p>
+              </AnimatedTooltipContent>
+            </Tooltip>
+          </Link>
+        </div>
+
+
+        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
           <Link href="/about">
             <Tooltip>
               <TooltipTrigger>
@@ -122,40 +161,6 @@ export const LeftBar = () => {
               </TooltipTrigger>
               <AnimatedTooltipContent>
                 <p>About Me</p>
-              </AnimatedTooltipContent>
-            </Tooltip>
-          </Link>
-        </div>
-
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-          <Link href="/what-i-do">
-            <Tooltip>
-              <TooltipTrigger>
-                <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white  dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
-                    <Blocks className="w-6 h-6" />
-                  </div>
-                </AnimatedIconContent>
-              </TooltipTrigger>
-              <AnimatedTooltipContent>
-                <p>What I Do</p>
-              </AnimatedTooltipContent>
-            </Tooltip>
-          </Link>
-        </div>
-
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-          <Link href="/my-tools">
-            <Tooltip>
-              <TooltipTrigger>
-                <AnimatedIconContent>
-                  <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
-                    <CircuitBoard className="w-6 h-6" />
-                  </div>
-                </AnimatedIconContent>
-              </TooltipTrigger>
-              <AnimatedTooltipContent>
-                <p>My Tools</p>
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
@@ -179,7 +184,7 @@ export const LeftBar = () => {
         </div>
 
         <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
-          <Link href="/resume-download">
+          <a download href="/Sean Stobo - Resume 2023.pdf">
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
@@ -192,7 +197,7 @@ export const LeftBar = () => {
                 <p>Download my resume</p>
               </AnimatedTooltipContent>
             </Tooltip>
-          </Link>
+          </a>
         </div>
 
         <div className="w-12 h-12 mx-auto mt-64 transition-all duration-150 hover:cursor-pointer" onClick={(shakeAll)}>

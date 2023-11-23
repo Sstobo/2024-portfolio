@@ -28,7 +28,7 @@ export function Intro() {
   // Component return with the event listeners added to the main element
   return (
     <div
-      className="flex flex-col text-left h-screen"
+      className="flex flex-col text-left "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -45,7 +45,7 @@ export function Intro() {
         </span>
       </h1>
       <h1 className="text-5xl font-medium">
-        I Craft Digital Experiences with a Sustainable Edge.
+        I Lead Teams and Craft Digital Experiences.
       </h1>
 
       <div className="pt-12 pl-9">

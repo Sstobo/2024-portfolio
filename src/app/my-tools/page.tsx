@@ -19,15 +19,16 @@ export default function Home() {
           <PageBanner
             heading="The Tools I Use"
             description="A cook is only as good as their ingredients. I use the best tools for the job, from tried and true, to cutting edge."
-            fontStyle={`from-pink-400 to-fuchsia-600 dark:from-fuchsia-500 dark:to-purple-700`}
+            subheading="I love to learn. Its probably my favorite thing to do. Exploring new technologies, and honing the depth of my knowledge in the tools I use is a driving passion of mine."
+            fontStyle={`from-pink-400 to-fuchsia-600 dark:from-green-200 dark:via-emerald-400 dark:to-green-100`}
           />
 
    
        
       </ScrollSection>
 
-      <h3 className="text-5xl font-bold  mb-3">Full-Stack Developer: Crafting Eco-Efficient, Future-Proof Digital Experiences</h3>
-      <p className="text-xl dark:text-slate-400 mb-9 w-2/4">With a devotion to the art of code, I engineer seamless, scalable web applications harnessing the power of server-side rendering, utility-first styling, and robust type-safe languages, all underpinned by a philosophy of sustainability in the digital realm.</p>
+      <h3 className="text-5xl font-bold  mb-3">My Proficiencies</h3>
+      <p className="text-xl dark:text-slate-400 mb-9 w-full">As I mentioned, I love to learn, and build new things. This is my prefered toolkit, but the list keeps on growing!</p>
       <TechStack />
 
       

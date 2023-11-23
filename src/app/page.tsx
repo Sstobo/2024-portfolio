@@ -11,7 +11,7 @@ import { ScrollSection } from '@/components/animations/ScrollSection';
 
 export default function Page() {
   return (
-    <main className="flex h-full flex-row flex-wrap">
+    <main className="flex flex-row flex-wrap">
         <Intro />
      </main>
   );

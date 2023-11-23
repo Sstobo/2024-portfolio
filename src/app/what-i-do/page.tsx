@@ -17,20 +17,31 @@ export default function Home() {
 
           <PageBanner
             heading="What I Do"
-            description="I am a senior agency developer with 6 years of full-scale production experience, and the leadership and training skills developed in 10 years working as an executive chef. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same."
+            description="I am a senior agency Web Developer and Team Leader. I have built and overseen the development of hundreds of professional agency websites. "
+            subheading="I guide the development process of software projects. Whether its writing a bespoke API integration to tap into the power of Large Language Models, or a multi page Wordpress Domain, I drive reliable, predictable and needle moving results. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same."
             fontStyle={`from-blue-400 to-cyan-600 dark:from-fuchsia-500 dark:to-purple-700`}
           />
           
         <div>
           <h2 className="ml-9 mb-12 mt-24 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
           <FeaturedBuild
-            subHeading="Latest Build"
+            subHeading="Recent Build"
             heading="Work On Climate"
-            description="A custom WordPress theme built for the Work On Climate campaign. The site features a custom-built interactive map, a custom-built interactive quiz, and a custom-built interactive calculator."
+            description="A custom WordPress theme built for the Work On Climate campaign. This site features custom Gutenberg Blocks, custom post types, custom taxonomies, and a custom theme."
             image="/woc.png"
             imageAlt="Work On Climate"
             fontStyle={`from-emerald-400 to-emerald-800 dark:to-emerald-100`}
             link={`https://workonclimate.org/`}
+          />
+
+          <FeaturedBuild
+            subHeading="Recent Work"
+            heading="SoftLanding"
+            description="A custom WordPress theme built for the Work On Climate campaign. The site features a custom-built interactive map, a custom-built interactive quiz, and a custom-built interactive calculator."
+            image="/lindome.png"
+            imageAlt="Lindome Structures"
+            fontStyle={`from-cyan-400 to-blue-800 dark:to-blue-100`}
+            link={`https://lindomestructures.com/`}
           />
 
           <FeaturedBuild

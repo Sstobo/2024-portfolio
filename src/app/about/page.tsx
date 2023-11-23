@@ -38,8 +38,9 @@ export default function Page() {
       <ScrollSection>
         <PageBanner
           heading="Who am I?"
-          description="I am a Vancouver based, professional web developer with a passion for beautiful, sustianable, and accessible web experiences. I have lived an interesting and varied life, which uniquely positions me in the IT marketplace."
-          fontStyle={`from-green-900 via-emerald-500 to-yellow-600 dark:from-emerald-500 dark:via-cyan-400 dark:to-purple-100`}
+          description="I am a Vancouver based, professional Web Developer and Project Manager, with a passion for beautiful, sustianable, and accessible web experiences."
+          subheading="Prior to leading Development Projects, many years ago, I was a corporate restaurant Chef. Recruiting, training and leading highly effective teams of up to 80 cooks, has seasoned my ability to immediatly impact teams and outcomes. I combine technical expertise with a strong sense of empathy and a passion for teaching and mentoring, as well as a deep understanding of the importance of communication and collaboration."
+          fontStyle={`from-teal-300 via-fuchsia-500 to-blue-600 dark:from-emerald-500 dark:via-cyan-400 dark:to-purple-100`}
         />
       </ScrollSection>
 

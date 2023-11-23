@@ -11,8 +11,8 @@ export default function Page() {
     <main className="flex h-full flex-row flex-wrap">
       <ScrollSection>
         <div className="w-12/12 h-screen">
-            <h2 className="text-9xl font-black mb-3 text-transparent bg-clip-text bg-gradient-to-br from-teal-900 via-teal-500 to-purple-900 dark:from-purple-200 dark:via-cyan-400 dark:to-purple-100">Lets get in touch!</h2>
-            <p className="text-5xl mb-10  font-medium"> I am always looking for interesting and meaningful projects to work on. If you have an idea you would like to discuss, or just want to say hi, please feel free to reach out to me.</p>
+            <h2 className="text-9xl font-black mb-16 text-transparent bg-clip-text bg-gradient-to-br from-teal-900 via-teal-500 to-purple-900 dark:from-amber-200 dark:via-amber-600 dark:to-amber-100">Lets get in touch!</h2>
+            <p className="text-5xl mb-32  font-medium"> I am always looking for interesting and meaningful projects to work on. If you have an idea you would like to discuss, or just want to say hi, please feel free to reach out to me.</p>
    
             <CopyToClipboard
                   text="seanstobo@gmail.com"
@@ -23,6 +23,7 @@ export default function Page() {
                     <p className="">seanstobo@gmail.com</p>
                     </div>
           </CopyToClipboard>
+          <p className="text-xs text-grey-500 relative -top-2px">Click to copy</p>
   
       </div>
       </ScrollSection>
