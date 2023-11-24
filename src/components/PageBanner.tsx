@@ -17,12 +17,12 @@ export const PageBanner = (props: PageBannerProps) => {
     return (
 
         <div className="w-12/12 mb-24 flex flex-row flex-wrap justify-between">
-            <h2 className={`w-full mb-24 text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br ${fontStyle} `}>{heading}</h2>
-            <p className="text-5xl mb-32  font-medium w-7/12">{description}</p>
+            <h2 className={`mb-5 xl:mb-24 text-7xl xl:text-9xl  w-full  font-black text-transparent bg-clip-text bg-gradient-to-br ${fontStyle} `}>{heading}</h2>
+            <p className="w-full xl:w-7/12 text-3xl xl:text-5xl xl:mb-32 mb-24 font-medium ">{description}</p>
             
-            <div className="relative w-4/12">
-                    <p className=" font-medium text-xl">{subheading}</p>
-                    <div className={`absolute -top-12 -left-12 h-32 w-32 opacity-25 bg-gradient-to-br ${fontStyle}`}></div>
+            <div className="xl:w-4/12 mb-32 xl:mb-0 w-full relative ">
+                    <p className="z-10 relative font-medium text-xl">{subheading}</p>
+                    <div className={`z-0 absolute -top-8 -left-12 h-32 w-32 opacity-25 bg-gradient-to-br ${fontStyle}`}></div>
             </div>
             
             <div className="w-full mb-72">

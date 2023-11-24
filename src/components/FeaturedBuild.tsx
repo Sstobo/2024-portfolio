@@ -19,7 +19,7 @@ export const FeaturedBuild = (props: FeaturedBuildProps) => {
         <div className="flex flex-row flex-wrap p-6 pl-12 relative justify-center items-center mb-20 dark:bg-slate-900  transition-all duration-150 rounded">
         <div className="w-6/12 pr-16">
 
-          <h6 className="font-bold text-teal-900">{subHeading}</h6>
+          <h6 className="text-xl font-medium dark:text-slate-300">{subHeading}</h6>
           <h3 className={`text-6xl font-black mb-3 text-transparent bg-clip-text bg-gradient-to-br ${fontStyle}`}>
            {heading}</h3>
           <p className="text-xl mb-6 font-light">

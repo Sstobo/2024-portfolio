@@ -44,11 +44,60 @@ export function Intro() {
           Sean Stobo.
         </span>
       </h1>
-      <h1 className="text-5xl font-medium">
-        I Lead Teams and Craft Digital Experiences.
-      </h1>
+      <h2 className="text-6xl font-medium mb-6">
+      Tech Operations Leader 
+      </h2>
+      <h3 className="text-3xl font-thin underline  underline-offset-4 dark:no-underline decoration-dashed  dark:text-slate-300">
+      Driving Team Excellence & Business Outcomes in Web Development and Unlocking Value through Streamlined Solutions
+      </h3>
+
+
+      
 
       <div className="pt-12 pl-9">
+
+      <div className="flex w-30 mb-3">
+          <Image
+            src="/line-chart.gif"
+            alt="An image of a chart"
+            width={54}
+            height={54}
+            className="rounded shadow-sm"
+          />
+          <div className="dark:text-cyan-300 pl-3 pt-4">
+            <TypeWriter
+              options={{
+                strings: [
+                  `{ I drive the metrics that matter. I cut costs and increase revenue. } `,
+                ],
+                autoStart: true,
+                loop: true,
+                pauseFor: 15000,
+              }}
+            />
+          </div>
+        </div>
+        <div className="flex w-30 mb-3">
+          <Image
+            src="/teacher.gif"
+            alt="An image of a tree"
+            width={54}
+            height={54}
+            className="rounded shadow-sm"
+          />
+          <div className="dark:text-cyan-300 pl-3 pt-4">
+            <TypeWriter
+              options={{
+                strings: [`{ I lead teams and train technical skills. } `],
+                autoStart: true,
+                loop: true,
+                pauseFor: 15000,
+              }}
+            />
+          </div>
+        </div>
+
+
         <div className="flex w-30 mb-3">
           <Image
             src="/crane.gif"
@@ -63,6 +112,26 @@ export function Intro() {
                 strings: [
                   `{ I custom code websites and applications from the ground up, to your exact specifications. } `,
                 ],
+                autoStart: true,
+                loop: true,
+                pauseFor: 15000,
+              }}
+            />
+          </div>
+        </div>
+
+        <div className="flex w-30 mb-3">
+          <Image
+            src="/therapy.gif"
+            alt="An image of a tree"
+            width={54}
+            height={54}
+            className="rounded shadow-sm"
+          />
+          <div className="dark:text-cyan-300 pl-3 pt-4">
+            <TypeWriter
+              options={{
+                strings: [`{ I provide crystal clear communication between laypeople and technical experts. } `],
                 autoStart: true,
                 loop: true,
                 pauseFor: 15000,
@@ -91,47 +160,8 @@ export function Intro() {
           </div>
         </div>
 
-        <div className="flex w-30 mb-3">
-          <Image
-            src="/teacher.gif"
-            alt="An image of a tree"
-            width={54}
-            height={54}
-            className="rounded shadow-sm"
-          />
-          <div className="dark:text-cyan-300 pl-3 pt-4">
-            <TypeWriter
-              options={{
-                strings: [`{ I lead teams and train technical skills. } `],
-                autoStart: true,
-                loop: true,
-                pauseFor: 15000,
-              }}
-            />
-          </div>
-        </div>
+ 
 
-        <div className="flex w-30 mb-3">
-          <Image
-            src="/line-chart.gif"
-            alt="An image of a chart"
-            width={54}
-            height={54}
-            className="rounded shadow-sm"
-          />
-          <div className="dark:text-cyan-300 pl-3 pt-4">
-            <TypeWriter
-              options={{
-                strings: [
-                  `{ I have a proven and tested track record of driving the metrics that matter. } `,
-                ],
-                autoStart: true,
-                loop: true,
-                pauseFor: 15000,
-              }}
-            />
-          </div>
-        </div>
 
         <div className="flex w-30">
           <Image

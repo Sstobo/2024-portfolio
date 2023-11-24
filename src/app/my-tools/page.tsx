@@ -18,8 +18,8 @@ export default function Home() {
     
           <PageBanner
             heading="The Tools I Use"
-            description="A cook is only as good as their ingredients. I use the best tools for the job, from tried and true, to cutting edge."
-            subheading="I love to learn. Its probably my favorite thing to do. Exploring new technologies, and honing the depth of my knowledge in the tools I use is a driving passion of mine."
+            description="A cook is only as good as their ingredients. I use the best tools for the job, from tried and true, to cutting edge. "
+            subheading="In my current role as a Tech Operations Leader, I blend my passion for programming with leadership, ensuring that technologies such as React, Next.js, PHP, Tailwind, CSS, HTML, and WordPress aren't just tools but catalysts for positive business transformation.  I translate non technical conversation to technical requirements, and provide clear and concise communication that goes both ways.  "
             fontStyle={`from-pink-400 to-fuchsia-600 dark:from-green-200 dark:via-emerald-400 dark:to-green-100`}
           />
 
@@ -27,8 +27,8 @@ export default function Home() {
        
       </ScrollSection>
 
-      <h3 className="text-5xl font-bold  mb-3">My Proficiencies</h3>
-      <p className="text-xl dark:text-slate-400 mb-9 w-full">As I mentioned, I love to learn, and build new things. This is my prefered toolkit, but the list keeps on growing!</p>
+      <h3 className="text-6xl font-medium mt-32 underline  underline-offset-4 dark:no-underline decoration-dashed  mb-6">My Proficiencies</h3>
+      <p className="text-3xl font-thin   dark:text-slate-300 mb-9 w-full">As I mentioned, I love to learn, and build new things. This is my prefered toolkit, but the list keeps on growing!</p>
       <TechStack />
 
       

@@ -17,13 +17,13 @@ export default function Home() {
 
           <PageBanner
             heading="What I Do"
-            description="I am a senior agency Web Developer and Team Leader. I have built and overseen the development of hundreds of professional agency websites. "
-            subheading="I guide the development process of software projects. Whether its writing a bespoke API integration to tap into the power of Large Language Models, or a multi page Wordpress Domain, I drive reliable, predictable and needle moving results. I create pixel-perfect websites and custom components at pace and scale, and I teach others to do the same."
+            description="I optimize systems to reduce costs, and I create beautiful products to increase revenue."
+            subheading="I lead software initiatives with precision, transforming project specifications into high-value technical solutions. From engineered API integrations that harness the potential of LLMs to feature-rich WordPress platforms, my aim is steady—delivering consistent, impactful results. I mentor teams to craft flawless digital experiences rapidly, always with a keen eye on escalating business growth and operational efficiency."
             fontStyle={`from-blue-400 to-cyan-600 dark:from-fuchsia-500 dark:to-purple-700`}
           />
           
         <div>
-          <h2 className="ml-9 mb-12 mt-24 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
+          <h2 className="ml-9 mb-12 mt-24 text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
           <FeaturedBuild
             subHeading="Recent Build"
             heading="Work On Climate"
@@ -38,10 +38,10 @@ export default function Home() {
             subHeading="Recent Work"
             heading="SoftLanding"
             description="A custom WordPress theme built for the Work On Climate campaign. The site features a custom-built interactive map, a custom-built interactive quiz, and a custom-built interactive calculator."
-            image="/lindome.png"
-            imageAlt="Lindome Structures"
-            fontStyle={`from-cyan-400 to-blue-800 dark:to-blue-100`}
-            link={`https://lindomestructures.com/`}
+            image="/softlanding.png"
+            imageAlt="Softlanding "
+            fontStyle={`from-orange-400 to-orange-800 dark:to-orange-100`}
+            link={`https://www.softlanding.ca/`}
           />
 
           <FeaturedBuild
@@ -55,7 +55,7 @@ export default function Home() {
           />
 
 
-<h2 className="ml-9 mb-12 text-5xl border-b-2 border-black border-dashed dark:border-white w-fit">GPT Powered AI Applications</h2>
+          <h2 className="ml-9 mb-12 text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">GPT Powered AI Applications</h2>
           <FeaturedBuild
             subHeading="LLM Storyteller App"
             heading="Visit Storyland"
@@ -66,13 +66,25 @@ export default function Home() {
             link={`https://storyland-two.vercel.app/`}
           />
 
+          <h2 className="ml-9 mb-12 text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">Bespoke Dashboard Applications</h2>
+          <FeaturedBuild
+            subHeading="API Interface and Material UI"
+            heading="Stock Market Dashboardd"
+            description="A comprehensive and powerful fully featured investment information dashboard."
+            image="/stocks.png"
+            imageAlt="Stocks"
+            fontStyle={`from-green-400 to-green-800 dark:to-green-500`}
+            link={`https://storyland-two.vercel.app/`}
+          />
+
+
           </div>
      </ScrollSection>
 
      <div>
 
-        <h3 className="text-5xl font-bold mt-32 mb-3">More completed projects.</h3>
-        <p className="text-xl dark:text-slate-400 mb-9 w-2/4">Some of the many many website I have created. I was the primary developer on all of these. Design and content provided by the talented team at forgeandsmith.com.</p>
+        <h3 className="text-6xl font-medium mt-32 mb-6 underline  underline-offset-4 dark:no-underline decoration-dashed">More completed projects.</h3>
+        <p className="text-3xl font-thin  dark:text-slate-300 mb-9 w-fit">Some of the many websites I have built. Design and content provided by the talented team at forgeandsmith.com.</p>
           <JobsDone />
         </div>
  
