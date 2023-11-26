@@ -34,7 +34,7 @@ const ImageItem = ({
 
 export default function Page() {
   return (
-    <main className="flex h-full flex-row flex-wrap">
+    <main className="flex md:h-full flex-row flex-wrap">
       <ScrollSection>
         <PageBanner
           heading="Who am I?"
@@ -44,11 +44,11 @@ export default function Page() {
         />
       </ScrollSection>
 
-      <h3 className="text-7xl font-bold mb-16">
+      <h3 className="md:text-5xl text-xl lg:text-7xl font-bold mb:mb-16 mt-12 mb-6">
         Here are some of the things that make me happy.💗
       </h3>
 
-      <div className="flex flex-wrap w-full justify-between items-stretch mb-32">
+      <div className="block lg:flex flex-wrap w-full justify-between items-stretch mb-32">
         <div className="flex-1 p-1.5">
           <ImageItem
             title="My little fluffball Sol."

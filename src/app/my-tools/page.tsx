@@ -27,8 +27,8 @@ export default function Home() {
        
       </ScrollSection>
 
-      <h3 className="text-6xl font-medium mt-32 underline  underline-offset-4 dark:no-underline decoration-dashed  mb-6">My Proficiencies</h3>
-      <p className="text-3xl font-thin   dark:text-slate-300 mb-9 w-full">As I mentioned, I love to learn, and build new things. This is my prefered toolkit, but the list keeps on growing!</p>
+      <h3 className="text-2xl md:text-6xl font-medium mt-32 underline  underline-offset-4 dark:no-underline decoration-dashed  mb-6">My Proficiencies</h3>
+      <p className="md:text-3xl font-thin   dark:text-slate-300 mb-9 w-full">As I mentioned, I love to learn, and build new things. This is my prefered toolkit, but the list keeps on growing!</p>
       <TechStack />
 
       

@@ -69,7 +69,9 @@ export const LeftBar = () => {
     const animationProps = useJiggleAnimation();
     return (
       <animated.div {...animationProps}>
-        <TooltipContent side="right">{children}</TooltipContent>
+        <div className="hidden md:block">
+          <TooltipContent side="right">{children}</TooltipContent>
+        </div>
       </animated.div>
     );
   };
@@ -91,10 +93,10 @@ export const LeftBar = () => {
   return (
     <div
       id="left-bar"
-      className="flex flex-col w-20 transition-all  duration-150 border-r-2 dark:border-slate-50 border-slate-800 fixed mt-16 h-full"
+      className="z-50 flex flex-row md:flex-col md:h-full w-full h-24 md:w-20 transition-all  duration-150 border-b-2 md:border-r-2 dark:border-slate-50 border-slate-800 fixed mt-16 backdrop-blur-lg"
     >
       <TooltipProvider delayDuration={100}>
-        <div className="w-12 h-12 mx-auto mt-24 transition-all duration-150 hover:cursor-pointer">
+        <div className="w-12 h-12 mx-2 md:mx-auto mt-4 md:mt-24 transition-all duration-150 hover:cursor-pointer">
           <Link href="/">
             <Tooltip>
               <TooltipTrigger>
@@ -105,13 +107,14 @@ export const LeftBar = () => {
                 </AnimatedIconContent>
               </TooltipTrigger>
               <AnimatedTooltipContent>
-                <p>Back home</p>
+                <p>Back Home</p>
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
+          <h6 className="text-xs text-center block md:hidden mt-1 ">Home</h6>
         </div>
 
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+        <div className="w-12 h-12 mx-2 md:mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
           <Link href="/what-i-do">
             <Tooltip>
               <TooltipTrigger>
@@ -126,12 +129,13 @@ export const LeftBar = () => {
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
+          <h6 className="text-xs text-center block md:hidden mt-1 ">Work</h6>
         </div>
 
 
 
 
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+        <div className="w-12 h-12 mx-2 md:mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
           <Link href="/my-tools">
             <Tooltip>
               <TooltipTrigger>
@@ -146,10 +150,11 @@ export const LeftBar = () => {
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
+          <h6 className="text-xs text-center block md:hidden mt-1  ">Expertise</h6>
         </div>
 
 
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+        <div className="w-12 h-12 mx-2 md:mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
           <Link href="/about">
             <Tooltip>
               <TooltipTrigger>
@@ -164,9 +169,10 @@ export const LeftBar = () => {
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
+          <h6 className="text-xs text-center block md:hidden mt-1 ">About</h6>
         </div>
 
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+        <div className="w-12 h-12 mx-2 md:mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
           <Link href="/contact">
             <Tooltip>
               <TooltipTrigger>
@@ -177,19 +183,21 @@ export const LeftBar = () => {
                 </AnimatedIconContent>
               </TooltipTrigger>
               <AnimatedTooltipContent>
-                <p>Contact information</p>
+                <p>Contact Information</p>
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
+          <h6 className="text-xs text-center block md:hidden mt-1 ">Contact</h6>
         </div>
 
-        <div className="w-12 h-12 mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
+        <div className="w-12 h-12  mx-2 md:mx-auto mt-4 transition-all duration-150 hover:cursor-pointer">
           <a download href="/Sean Stobo - Resume 2023.pdf">
             <Tooltip>
               <TooltipTrigger>
                 <AnimatedIconContent>
                   <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
                     <HardDriveDownload className="w-6 h-6" />
+                 
                   </div>
                 </AnimatedIconContent>
               </TooltipTrigger>
@@ -197,10 +205,11 @@ export const LeftBar = () => {
                 <p>Download my resume</p>
               </AnimatedTooltipContent>
             </Tooltip>
+            <h6 className="text-xs text-center block md:hidden mt-1 ">Resume</h6>
           </a>
         </div>
 
-        <div className="w-12 h-12 mx-auto mt-64 transition-all duration-150 hover:cursor-pointer" onClick={(shakeAll)}>
+        <div className="w-12 h-12 mx-2 md:mx-auto mt-64 transition-all duration-150 hover:cursor-pointer hidden md:block" onClick={(shakeAll)}>
           <Tooltip>
             <TooltipTrigger>
               <Image
@@ -210,7 +219,7 @@ export const LeftBar = () => {
                 height={54}
                 className="-rotate-90 mx-auto rounded"
               />
-              <h6 className="text-xs pt-3">Navigate</h6>
+              <h6 className="text-xs text-center block md:hidden mt-1  ">Navigate</h6>
             </TooltipTrigger>
             <AnimatedTooltipContent>
               <p>Click on the icons above to learn more.</p>

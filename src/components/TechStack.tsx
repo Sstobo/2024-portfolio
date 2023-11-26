@@ -13,10 +13,10 @@ import {
 
 export const TechStack = () => {
   return (
-    <div className="flex flex-row flex-wrap gap-3 mb-10 w-full">
+    <div className="block sm:flex flex-row flex-wrap gap-3 mb-10 w-full">
       {/* Next.js */}
       <div
-        className="w-3/12 relative border
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border
 dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-red-600 hover:border-white hover:bg-white hover:shadow-md bg-red-50/50
 rounded p-6 transition-all duration-300"
@@ -31,7 +31,7 @@ rounded p-6 transition-all duration-300"
 
       {/* Tailwind */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-cyan-500 hover:border-white hover:bg-white hover:shadow-md  bg-cyan-50/50
 rounded p-6 transition-all duration-300"
       >
@@ -45,7 +45,7 @@ rounded p-6 transition-all duration-300"
 
       {/* React */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-green-400 hover:border-white hover:bg-white hover:shadow-md  bg-green-50/50
 rounded p-6 transition-all duration-300"
       >
@@ -59,7 +59,7 @@ rounded p-6 transition-all duration-300"
 
       {/* HTML */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 hover:border-white hover:bg-white hover:shadow-md  bg-purple-100/50 border-purple-500
 rounded p-6 transition-all duration-300"
       >
@@ -73,7 +73,7 @@ rounded p-6 transition-all duration-300"
 
       {/* TypeScript */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-orange-600 hover:border-white hover:bg-white hover:shadow-md  bg-orange-100/50
 rounded p-6 transition-all duration-300"
       >
@@ -87,7 +87,7 @@ rounded p-6 transition-all duration-300"
 
       {/* JavaScript */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-fuchsia-500 hover:border-white hover:bg-white hover:shadow-md  bg-fuchsia-100/50 
 rounded p-6 transition-all duration-300"
       >
@@ -101,7 +101,7 @@ rounded p-6 transition-all duration-300"
 
       {/* Wordpress */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-blue-500 hover:border-white hover:bg-white hover:shadow-md  bg-blue-100/50
 rounded p-6 transition-all duration-300"
       >
@@ -115,7 +115,7 @@ rounded p-6 transition-all duration-300"
 
       {/* PHP */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-yellow-500 hover:border-white hover:bg-white hover:shadow-md  bg-yellow-100/50
 rounded p-6 transition-all duration-300"
       >
@@ -129,7 +129,7 @@ rounded p-6 transition-all duration-300"
 
       {/* OpenAPI */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-cyan-500 hover:border-white hover:bg-white hover:shadow-md  bg-green-100/50
 rounded p-6 transition-all duration-300"
       >
@@ -143,7 +143,7 @@ rounded p-6 transition-all duration-300"
 
       {/* Green Coding */}
       <div
-        className="w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
+        className="mb-3 md:mb-0 w-full md:w-5/12 lg:w-3/12 relative border dark:border-slate-800 dark:bg-slate-900/50 hover:dark:border-cyan-900 hover:dark:bg-slate-950
 border-green-500 hover:border-white hover:bg-white hover:shadow-md  bg-green-100/50
 rounded p-6 transition-all duration-300"
       >

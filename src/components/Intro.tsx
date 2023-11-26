@@ -5,7 +5,7 @@ import { useSpring, animated } from "react-spring";
 import { Hand } from "lucide-react";
 import Image from "next/image";
 import TypeWriter from "typewriter-effect";
-declare module 'typewriter-effect' {
+declare module "typewriter-effect" {
   export interface Options {
     // Add the missing option here
     pauseFor?: number;
@@ -32,11 +32,11 @@ export function Intro() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h1 className="text-9xl font-black mb-6">
+      <h1 className="text-5xl lg:text-9xl font-black mb-6">
         <span className="flex w-min">
           Hello!{" "}
           <animated.span style={wavingSpring}>
-            <Hand className="w-24 h-24 mt-3 dark:text-white" />
+            <Hand className="w-10 h-10 lg:w-24 lg:h-24 lg:mt-3 ml-3 dark:text-white" />
           </animated.span>
         </span>
         Im{" "}
@@ -44,25 +44,22 @@ export function Intro() {
           Sean Stobo.
         </span>
       </h1>
-      <h2 className="text-6xl font-medium mb-6">
-      Tech Operations Leader 
+      <h2 className="text-4xl lg:text-6xl font-medium mb-6">
+        Tech Operations Leader
       </h2>
-      <h3 className="text-3xl font-thin underline  underline-offset-4 dark:no-underline decoration-dashed  dark:text-slate-300">
-      Driving Team Excellence & Business Outcomes in Web Development and Unlocking Value through Streamlined Solutions
+      <h3 className="text-2xl lg:text-3xl font-thin underline  underline-offset-4 dark:no-underline decoration-dashed  dark:text-slate-300">
+        Driving Team Excellence & Business Outcomes in Web Development and
+        Unlocking Value through Streamlined Solutions
       </h3>
 
-
-      
-
-      <div className="pt-12 pl-9">
-
-      <div className="flex w-30 mb-3">
+      <div className="pt-12 lg:pl-9">
+        <div className="flex w-30 mb-3">
           <Image
             src="/line-chart.gif"
             alt="An image of a chart"
             width={54}
             height={54}
-            className="rounded shadow-sm"
+            className="rounded shadow-sm h-14 w-14"
           />
           <div className="dark:text-cyan-300 pl-3 pt-4">
             <TypeWriter
@@ -83,7 +80,7 @@ export function Intro() {
             alt="An image of a tree"
             width={54}
             height={54}
-            className="rounded shadow-sm"
+            className="rounded shadow-sm h-14 w-14"
           />
           <div className="dark:text-cyan-300 pl-3 pt-4">
             <TypeWriter
@@ -97,14 +94,13 @@ export function Intro() {
           </div>
         </div>
 
-
         <div className="flex w-30 mb-3">
           <Image
             src="/crane.gif"
             alt="An image of a crane"
             width={54}
             height={54}
-            className="rounded shadow-sm"
+            className="rounded shadow-sm h-14 w-14"
           />
           <div className="dark:text-cyan-300 pl-3 pt-4">
             <TypeWriter
@@ -126,12 +122,14 @@ export function Intro() {
             alt="An image of a tree"
             width={54}
             height={54}
-            className="rounded shadow-sm"
+            className="rounded shadow-sm h-14 w-14"
           />
           <div className="dark:text-cyan-300 pl-3 pt-4">
             <TypeWriter
               options={{
-                strings: [`{ I provide crystal clear communication between laypeople and technical experts. } `],
+                strings: [
+                  `{ I provide crystal clear communication between laypeople and technical experts. } `,
+                ],
                 autoStart: true,
                 loop: true,
                 pauseFor: 15000,
@@ -146,7 +144,7 @@ export function Intro() {
             alt="An image of a tree"
             width={54}
             height={54}
-            className="rounded shadow-sm"
+            className="rounded shadow-sm h-14 w-14"
           />
           <div className="dark:text-cyan-300 pl-3 pt-4">
             <TypeWriter
@@ -160,16 +158,13 @@ export function Intro() {
           </div>
         </div>
 
- 
-
-
         <div className="flex w-30">
           <Image
             src="/basketball-player.gif"
             alt="An image of a basketball player"
             width={54}
             height={54}
-            className="rounded shadow-sm"
+            className="rounded shadow-sm h-14 w-14"
           />
           <div className="dark:text-cyan-300 pl-3 pt-4">
             <TypeWriter
@@ -185,8 +180,6 @@ export function Intro() {
           </div>
         </div>
       </div>
-
-   
     </div>
   );
 }

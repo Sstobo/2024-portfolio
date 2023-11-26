@@ -23,7 +23,7 @@ export default function Home() {
           />
           
         <div>
-          <h2 className="ml-9 mb-12 mt-24 text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
+          <h2 className="mt-24 md:mt-0 md:ml-9 mb-12 text-4xl md:text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">Wordpress Websites With Custom Gutenberg Blocks</h2>
           <FeaturedBuild
             subHeading="Recent Build"
             heading="Work On Climate"
@@ -55,7 +55,7 @@ export default function Home() {
           />
 
 
-          <h2 className="ml-9 mb-12 text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">GPT Powered AI Applications</h2>
+          <h2 className="md:ml-9 mb-12 text-4xl md:text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">GPT Powered AI Applications</h2>
           <FeaturedBuild
             subHeading="LLM Storyteller App"
             heading="Visit Storyland"
@@ -66,7 +66,7 @@ export default function Home() {
             link={`https://storyland-two.vercel.app/`}
           />
 
-          <h2 className="ml-9 mb-12 text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">Bespoke Dashboard Applications</h2>
+          <h2 className="md:ml-9 mb-12 text-4xl md:text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">Bespoke Dashboard Applications</h2>
           <FeaturedBuild
             subHeading="API Interface and Material UI"
             heading="Stock Market Dashboardd"
@@ -83,8 +83,8 @@ export default function Home() {
 
      <div>
 
-        <h3 className="text-6xl font-medium mt-32 mb-6 underline  underline-offset-4 dark:no-underline decoration-dashed">More completed projects.</h3>
-        <p className="text-3xl font-thin  dark:text-slate-300 mb-9 w-fit">Some of the many websites I have built. Design and content provided by the talented team at forgeandsmith.com.</p>
+        <h3 className="text-3xl md:text-6xl font-medium mt-32 mb-6 underline  underline-offset-4 dark:no-underline decoration-dashed">More completed projects.</h3>
+        <p className="md:text-3xl text-xl font-thin  dark:text-slate-300 mb-9 w-fit">Some of the many websites I have built. Design and content provided by the talented team at forgeandsmith.com.</p>
           <JobsDone />
         </div>
  

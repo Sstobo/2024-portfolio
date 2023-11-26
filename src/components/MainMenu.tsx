@@ -19,13 +19,13 @@ import { ClipboardCopy } from "lucide-react";
 
 export function MainMenu() {
   return (
-    <div className="ml-7">
+    <div className="ml-7 hidden md:block">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Lets Talk!</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="grid gap-3 p-4 w-full md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
