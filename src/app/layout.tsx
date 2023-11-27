@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
+        <head>
+        <link rel="shortcut icon" href="/public/atom.png" />
+        </head>
         <body className={GeistSans.className}>
           <ThemeProvider
             attribute="class"

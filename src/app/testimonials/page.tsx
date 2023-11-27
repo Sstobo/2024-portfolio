@@ -66,28 +66,28 @@ export default function Page() {
       <div className="flex flex-col w-full justify-between items-stretch mb-32">
 
         <div className="dark:border-0 dark:bg-slate-950 rounded p-12 border-2 border-black border-dashed mb-12">
-          <p className="text-2xl italic">{testimonials.testimonial1.quote}</p>
+          <p className="text-xl md:text-2xl  italic">{testimonials.testimonial1.quote}</p>
           <p className="font-bold mt-5">{testimonials.testimonial1.name}</p>
           <p className="mb-3 text-teal-500">{testimonials.testimonial1.title}</p>
           <a href={testimonials.testimonial1.link} target="_blank" className="underline">{testimonials.testimonial1.link}</a>
         </div>
 
         <div className="dark:border-0 dark:bg-slate-950 rounded p-12 border-2 border-black border-dashed  mb-12">
-          <p className="text-2xl italic">{testimonials.testimonial2.quote}</p>
+          <p className="text-xl md:text-2xl  italic">{testimonials.testimonial2.quote}</p>
           <p className="font-bold mt-5">{testimonials.testimonial2.name}</p>
           <p className="mb-3 text-teal-500">{testimonials.testimonial2.title}</p>
           <a href={testimonials.testimonial2.link} target="_blank" className="underline">{testimonials.testimonial2.link}</a>
           </div>
 
         <div className="dark:border-0 dark:bg-slate-950 rounded p-12 border-2 border-black border-dashed  mb-12">
-          <p className="text-2xl italic">{testimonials.testimonial3.quote}</p>
+          <p className="text-xl md:text-2xl  italic">{testimonials.testimonial3.quote}</p>
           <p className="font-bold mt-5">{testimonials.testimonial3.name}</p>
           <p className="mb-3 text-teal-500">{testimonials.testimonial3.title}</p>
           <a href={testimonials.testimonial3.link} target="_blank" className="underline">{testimonials.testimonial3.link}</a>
           </div>
 
         <div className="dark:border-0 dark:bg-slate-950 rounded p-12 border-2 border-black border-dashed  mb-12">
-        <p className="text-2xl italic">{testimonials.testimonial4.quote}</p>
+        <p className="text-xl md:text-2xl  italic">{testimonials.testimonial4.quote}</p>
           <p className="font-bold mt-5">{testimonials.testimonial4.name}</p>
           <p className="mb-3  text-teal-500">{testimonials.testimonial4.title}</p>
           <a href={testimonials.testimonial4.link} target="_blank" className="underline">{testimonials.testimonial4.link}</a>
