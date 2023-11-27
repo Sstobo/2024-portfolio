@@ -9,8 +9,8 @@ import {
   Binary,
   Accessibility,
   CircuitBoard,
-  Blocks,
-  DatabaseZap,
+  Speech,
+  Wrench,
   Boxes,
   Home,
 } from "lucide-react";
@@ -138,7 +138,7 @@ export const LeftBar = () => {
               <TooltipTrigger>
                 <AnimatedIconContent>
                   <div className="w-12 h-12 bg-white  dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
-                    <Boxes className="w-6 h-6" />
+                    <Speech className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>
               </TooltipTrigger>
@@ -157,7 +157,7 @@ export const LeftBar = () => {
               <TooltipTrigger>
                 <AnimatedIconContent>
                   <div className="w-12 h-12 bg-white dark:text-white rounded-sm text-slate-700 hover:text-white hover:bg-teal-300 dark:bg-slate-950 dark:hover:text-amber-500 flex items-center justify-center">
-                    <DatabaseZap  className="w-6 h-6" />
+                    <Wrench  className="w-6 h-6" />
                   </div>
                 </AnimatedIconContent>
               </TooltipTrigger>
