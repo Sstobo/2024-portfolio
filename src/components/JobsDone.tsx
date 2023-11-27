@@ -121,7 +121,7 @@ const JobItem = ({
     <motion.a
       href={link}
       target="_blank"
-      className={`w-full md:w-1/3 lg:w-3/12 xl:w-1/6 p-3 border-2 border-dashed border-black dark:hover:border-slate-900 hover:border-0 opacity-50 hover:opacity-100 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
+      className={`w-full m-1 md:w-80 p-3 border-2 border-dashed border-black dark:hover:border-slate-900 hover:border-0 opacity-50 hover:opacity-100 relative  dark:bg-slate-900  hover:dark:bg-slate-950   hover:shadow-lg bg-white rounded transition-all duration-300`}
       onHoverStart={() => controls.start("visible")}
       onHoverEnd={() => controls.start("hidden")}
       variants={containerVariants}
@@ -401,7 +401,7 @@ export const JobsDone = () => {
   // TODO muddlerrs!!
 
   return (
-    <div className="w-full flex flex-row gap-3 flex-wrap" id="jobsdone">
+    <div className="w-full flex flex-row flex-wrap" id="jobsdone">
       {jobItems.map((item, index) => (
         <JobItem key={index} {...item} />
       ))}

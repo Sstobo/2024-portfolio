@@ -61,7 +61,7 @@ export default function Page() {
       </ScrollSection>
 
       {/* testimonials */}
-      <div className="flex flex-col w-full justify-between items-stretch mb-32">
+      <div className="flex flex-col w-full justify-between items-stretch mb-32 mt-32">
         <div className="dark:border-0 dark:bg-slate-950 rounded p-12 border-2 border-black border-dashed mb-12">
           <p className="text-xl md:text-2xl  italic relative">
             <Quote className="absolute -left-9 "/>
