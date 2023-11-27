@@ -45,7 +45,7 @@ export function Intro() {
         </span>
       </h1>
       <h2 className="text-4xl lg:text-6xl font-medium mb-6">
-        Tech Operations Leader
+        I build teams and software.
       </h2>
       <h3 className="text-2xl lg:text-3xl font-thin underline  underline-offset-4 dark:no-underline decoration-dashed  dark:text-slate-300">
         Driving Team Excellence & Business Outcomes in Web Development and

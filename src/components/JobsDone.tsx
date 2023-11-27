@@ -16,6 +16,7 @@ type JobItemProps = {
   labelThree: string;
   statThree: string;
   color: string; // new prop to control the color
+  tech: string[];
 };
 
 const JobItem = ({
@@ -33,6 +34,7 @@ const JobItem = ({
   labelThree,
   statThree,
   color, // new prop to control the color
+  tech
 }: JobItemProps) => {
   const controls = useAnimation();
   const containerVariants = {
@@ -138,6 +140,15 @@ const JobItem = ({
       >
         {title}
       </h4>
+
+          {tech && (
+            <div className="flex flex-wrap mb-1">
+              {tech.map((tech) => (
+                <span className="text-sm mr-2 mb-2 bg-teal-200 dark:bg-slate-700 dark:text-amber-300 rounded px-3 py-1">{tech}</span>
+              ))}
+            </div>
+          )}
+
       <p className="dark:text-slate-400  mb-3 font-light text-sm">{skills}</p>
 
       <motion.div
@@ -182,7 +193,7 @@ export const JobsDone = () => {
       alt: "Image of Miracon's website",
       title: "Miracon",
       skills:
-        "Organic Search Traffic, Conversion Rate, Pageviews, Faster Page Loads",
+        "We delivered a visually engaging, scalable WordPress multisite with improved UX, SEO, and load times, significantly enhancing Miracon's digital presence and lead conversion metrics.",
       labelOne: "Organic search traffic:",
       statOne: "+281%",
       labelTwo: "Year over year conversion rate:",
@@ -190,6 +201,7 @@ export const JobsDone = () => {
       labelThree: "Year over year pageviews:",
       statThree: "+255%",
       color: "green",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Post Filtering', 'Custom Taxonomies']
     },
     {
       link: "https://www.mrslumber.com/",
@@ -198,7 +210,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Mrs Lumber's website",
       title: "Mrs Lumber",
-      skills: "Website Visits, Pageviews, Faster Page Speeds",
+      skills: "Revamped MRS Lumber's web presence with a user-centric, SEO-optimized WordPress site, enhancing navigation and product visibility for boosted engagement and customer conversion.",
       labelOne: "Website visits:",
       statOne: "+88%",
       labelTwo: "Year over year pageviews:",
@@ -206,6 +218,7 @@ export const JobsDone = () => {
       labelThree: "Year over year page speed:",
       statThree: "+60%",
       color: "cyan",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Post Filtering', 'Wordpress']
     },
     {
       link: "https://cpd.chbabc.org/",
@@ -214,7 +227,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of CHBA's website",
       title: "CHBA",
-      skills: "Website Visits, Organic Search Traffic, Pageviews",
+      skills: "Launched a dedicated, SEO-enhanced educational platform for CHBA BC with streamlined navigation and user-focused design, leading to significantly improved site metrics and user engagement.",
       labelOne: "Website visits:",
       statOne: "+60%",
       labelTwo: "Organic search traffic:",
@@ -222,6 +235,7 @@ export const JobsDone = () => {
       labelThree: "Pageviews:",
       statThree: "+79%",
       color: "red",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Post Filtering', 'API Integration']
     },
     {
       link: "https://www.summfoods.com/",
@@ -230,7 +244,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Summ's website",
       title: "Summ Foods",
-      skills: "Average Session Duration, Pages Per Session, Referral Traffic",
+      skills: "Developed a visually rich, SEO-optimized WordPress site for SUMM! Foods, with a streamlined architecture and responsive design, leading to a marked increase in engagement and referral metrics.",
       labelOne: "Average session duration:",
       statOne: "+105%",
       labelTwo: "Year over year pages per session:",
@@ -238,6 +252,7 @@ export const JobsDone = () => {
       labelThree: "Year over year referral traffic:",
       statThree: "+970%",
       color: "amber",
+      tech: ['PHP', 'SCSS', 'HTML', 'Jquery', 'Wordpress', 'ACF']
     },
     {
       link: "", // MISSING LINK
@@ -246,7 +261,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Kitimat's website",
       title: "Kitimat Bound",
-      skills: "Organic Search Traffic, Pageviews, Mobile Traffic",
+      skills: "Engineered a captivating, SEO-friendly WordPress site for Kitimat Bound, enhancing user experience with immersive visuals and intuitive navigation, resulting in impressive growth in organic search traffic and mobile engagement.",
       labelOne: "Organic search traffic:",
       statOne: "+101%",
       labelTwo: "Year over year pageviews:",
@@ -254,6 +269,7 @@ export const JobsDone = () => {
       labelThree: "Mobile traffic:",
       statThree: "+117%",
       color: "purple",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Jquery', 'Wordpress']
     },
     {
       link: "", // MISSING LINK
@@ -262,7 +278,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Delta Q's website",
       title: "Delta Q Technologies",
-      skills: "Faster Page Speeds, More Time on Site, Pages Per Session",
+      skills: "Delivered Delta-Q Technologies a powerful, dynamic WordPress site with refined aesthetics, leading to substantial increases in page speeds, onsite engagement, and session quality.",
       labelOne: "Faster page speeds:",
       statOne: "+86%",
       labelTwo: "Year over year more time on site:",
@@ -270,32 +286,17 @@ export const JobsDone = () => {
       labelThree: "Year over year pages per session:",
       statThree: "+53%",
       color: "green",
-    },
-    {
-      link: "https://lindomestructures.com/",
-      src: "/lindome.png",
-      width: 300,
-      height: 300,
-      alt: "Image of Lindome's website",
-      title: "Lindome",
-      skills: "Organic Search Traffic, Pageviews, AVG. Pages Per Session",
-      labelOne: "Organic search traffic:",
-      statOne: "+25%",
-      labelTwo: "Year over year pageviews:",
-      statTwo: "+43%",
-      labelThree: "Average pages per session:",
-      statThree: "+31%",
-      color: "blue",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Wordpress', 'Filtering']
     },
     {
       // TODO ADD RCBC
-      link: "https://www.circularmaterials.ca/about/",
+      link: "https://rcbc.ca/",
       src: "/RCBC.png",
       width: 300,
       height: 300,
-      alt: "Image of Circular Materials' website",
-      title: "Circular Materials",
-      skills: "Organic Search Traffic, Total Pageviews, Pages Per Session",
+      alt: "Image of RCBCs' website",
+      title: "Recycling Council of BC",
+      skills: "Implemented a modern, responsive WordPress site for RCBC, focusing on user experience enhancements and integrating the Recyclepedia feature for streamlined information access.",
       labelOne: "Organic search traffic:",
       statOne: "+132%",
       labelTwo: "Year over year total pageviews:",
@@ -303,6 +304,7 @@ export const JobsDone = () => {
       labelThree: "Year over year pages per session:",
       statThree: "+116%",
       color: "yellow",
+      tech: ['PHP', 'SCSS', 'ACF', 'API Integration', 'Wordpress']
     },
     {
       link: "", // MISSING LINK
@@ -311,7 +313,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Nexii's website",
       title: "Nexii",
-      skills: "Organic Search Traffic, Pageviews, U.S. Traffic",
+      skills: "Engineered a sleek, content-rich WordPress site for Nexii, spotlighting their sustainable building solutions and aligning with their mission, resulting in a significant uptick in organic search traffic and user engagement.",
       labelOne: "Organic search traffic:",
       statOne: "+90%",
       labelTwo: "Year over year pageviews:",
@@ -319,6 +321,7 @@ export const JobsDone = () => {
       labelThree: "Year over year U.S. traffic:",
       statThree: "+314%",
       color: "pink",
+      tech: ['PHP', 'SCSS', 'JS', 'Gutenberg Blocks', 'Wordpress']
     },
     {
       link: "https://pcrs.ca/",
@@ -327,7 +330,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of PCR's website",
       title: "PCRS",
-      skills: "Bounce Rate, Longer Sessions, More Search Traffic",
+      skills: "Delivered a visually inviting, intuitive WordPress CMS for PCRS, focused on their mission and services, resulting in a reduced bounce rate, longer sessions, and increased search traffic.",
       labelOne: "Year over year bounce rate:",
       statOne: "-57%",
       labelTwo: "Year over year longer sessions:",
@@ -335,6 +338,7 @@ export const JobsDone = () => {
       labelThree: "First month post-launch more search traffic:",
       statThree: "+10%",
       color: "purple",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Wordpress']
     },
     {
       link: "https://www.lgm.ca/",
@@ -343,7 +347,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of LGM Financial Services' website",
       title: "LGM Financial Services",
-      skills: "Website Users, Pages Per Session, Faster Page Loads",
+      skills: "Crafted a contemporary, SEO-optimized WordPress site for LGM, enhancing brand presence and user experience, leading to increased engagement, faster page loads, and more insightful performance tracking.",
       labelOne: "Website users:",
       statOne: "+70%",
       labelTwo: "Year over year pages per session:",
@@ -351,6 +355,7 @@ export const JobsDone = () => {
       labelThree: "Year over year page speed:",
       statThree: "+20%",
       color: "green",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Wordpress']
     },
     {
       link: "https://www.craftbeermarket.ca/",
@@ -359,7 +364,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Craft Beer Market's website",
       title: "Craft Beer Market",
-      skills: "Organic Search Traffic, Faster Page Loads, Organic Impressions",
+      skills: "Delivered for CRAFT Beer Market a robust, user-friendly WordPress site with a complex menu ordering system, complementing their brand refresh and streamlining the customer experience, leading to notable gains in organic traffic and page load speed.",
       labelOne: "Organic search traffic:",
       statOne: "+73%",
       labelTwo: "Year over year faster page loads:",
@@ -367,6 +372,7 @@ export const JobsDone = () => {
       labelThree: "Year over year organic impressions:",
       statThree: "+115%",
       color: "blue",
+      tech: ['PHP', 'SCSS', 'GEO Location', 'Javascript', 'Wordpress']
     },
     {
       link: "https://visitprincerupert.com/",
@@ -375,7 +381,7 @@ export const JobsDone = () => {
       height: 300,
       alt: "Image of Tourism Prince Rupert's website",
       title: "Tourism Prince Rupert",
-      skills: "Organic Search Traffic, Pageviews, Mobile Traffic",
+      skills: "Deployed for Tourism Prince Rupert an inviting, easy-to-navigate WordPress site with enhanced content management, augmenting brand storytelling while significantly increasing organic search traffic and mobile accessibility.",
       labelOne: "Organic search traffic:",
       statOne: "+40%",
       labelTwo: "Year over year pageviews:",
@@ -383,6 +389,7 @@ export const JobsDone = () => {
       labelThree: "Year over year mobile traffic:",
       statThree: "+52%",
       color: "yellow",
+      tech: ['PHP', 'SCSS', 'Gutenberg Blocks', 'Wordpress']
     },
   ];
 
