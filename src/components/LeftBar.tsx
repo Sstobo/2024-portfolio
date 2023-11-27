@@ -147,7 +147,7 @@ export const LeftBar = () => {
               </AnimatedTooltipContent>
             </Tooltip>
           </Link>
-          <h6 className="text-xs text-center block md:hidden mt-1 ">Testimonials</h6>
+          <h6 className="text-xs text-center block md:hidden mt-1 ">Reviews</h6>
         </div>
 
 
