@@ -28,7 +28,7 @@ export function Intro() {
   // Component return with the event listeners added to the main element
   return (
     <div
-      className="flex flex-col text-left "
+      className="flex flex-col text-left pb-24 "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
