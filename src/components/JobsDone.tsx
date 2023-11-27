@@ -141,13 +141,18 @@ const JobItem = ({
         {title}
       </h4>
 
-          {tech && (
-            <div className="flex flex-wrap mb-1">
-              {tech.map((tech) => (
-                <span className="text-sm mr-2 mb-2 bg-teal-200 dark:bg-slate-700 dark:text-amber-300 rounded px-3 py-1">{tech}</span>
-              ))}
-            </div>
-          )}
+      {tech.length > 0 && (
+          <div className="flex flex-wrap mb-6">
+            {tech.map((techItem, index) => (
+              <span
+                key={index}
+                className="text-sm mr-2 mb-2 bg-teal-200 dark:bg-slate-700 dark:text-amber-300 rounded px-3 py-1"
+              >
+                {techItem}
+              </span>
+            ))}
+          </div>
+        )}
 
       <p className="dark:text-slate-400  mb-3 font-light text-sm">{skills}</p>
 
