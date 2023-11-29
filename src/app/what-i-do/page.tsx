@@ -88,7 +88,7 @@ export default function Home() {
             tech={["Next.js", "GPT-4", "Dalle-3", "Typescript", "Tailwind"]}
             imageAlt="Work On Climate"
             fontStyle={`from-red-400 to-red-800 dark:to-rose-500`}
-            link={`https://storyland-two.vercel.app/`}
+            link={`https://storyland-two-production.up.railway.app/`}
           />
 
           <h2 className="md:ml-9 mb-12 text-4xl md:text-5xl underline  underline-offset-4 dark:no-underline decoration-dashed w-fit">
@@ -102,7 +102,7 @@ export default function Home() {
             tech={["React", "Material UI", "Alpha Vantage API", "Typescript"]}
             imageAlt="Stocks"
             fontStyle={`from-green-400 to-green-800 dark:to-green-500`}
-            link={`https://storyland-two.vercel.app/`}
+            link={`https://storyland-two-production.up.railway.app/`}
           />
         </div>
       </ScrollSection>
